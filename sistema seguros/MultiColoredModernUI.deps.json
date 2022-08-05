@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MultiColoredModernUI/1.0.0": {
+        "runtime": {
+          "MultiColoredModernUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MultiColoredModernUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
