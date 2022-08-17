@@ -47,10 +47,10 @@ namespace MultiColoredModernUI.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(44, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 15);
+            this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Selecione o Cliente";
             // 
