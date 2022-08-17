@@ -30,8 +30,6 @@ namespace MultiColoredModernUI.Forms
 
                 }
             }
-            label4.ForeColor = ThemeColor.SecondaryColor;
-            label5.ForeColor = ThemeColor.PrimaryColor;
         }
     }
 }
