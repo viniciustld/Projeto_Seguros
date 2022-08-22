@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MultiColoredModernUI
 {
-    public partial class Form1 : Form
+    public partial class PlataformaSeguros : Form
     {
         //Fields
         private Button currentButton;
@@ -20,7 +20,7 @@ namespace MultiColoredModernUI
         private Form activateForm;
 
         //Contructor
-        public Form1()
+        public PlataformaSeguros()
         {
             InitializeComponent();
             random = new Random();

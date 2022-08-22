@@ -1,7 +1,7 @@
 ﻿
 namespace MultiColoredModernUI
 {
-    partial class Form1
+    partial class PlataformaSeguros
     {
         /// <summary>
         ///  Required designer variable.
@@ -201,13 +201,13 @@ namespace MultiColoredModernUI
             this.label1.ForeColor = System.Drawing.Color.LightGray;
             this.label1.Location = new System.Drawing.Point(37, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 21);
+            this.label1.Size = new System.Drawing.Size(138, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "RJ Code Advance";
+            this.label1.Text = "Top Serviços Brasil";
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(136)))));
             this.panelTitleBar.Controls.Add(this.btnMinimized);
             this.panelTitleBar.Controls.Add(this.btnMaximize);
             this.panelTitleBar.Controls.Add(this.btnClose);
@@ -231,7 +231,7 @@ namespace MultiColoredModernUI
             this.btnMinimized.Name = "btnMinimized";
             this.btnMinimized.Size = new System.Drawing.Size(30, 40);
             this.btnMinimized.TabIndex = 4;
-            this.btnMinimized.Text = "O";
+            this.btnMinimized.Text = "-";
             this.btnMinimized.UseVisualStyleBackColor = true;
             this.btnMinimized.Click += new System.EventHandler(this.btnMinimized_Click);
             // 
@@ -246,7 +246,7 @@ namespace MultiColoredModernUI
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(30, 40);
             this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.Text = "O";
+            this.btnMaximize.Text = "º";
             this.btnMaximize.UseVisualStyleBackColor = true;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
@@ -261,7 +261,7 @@ namespace MultiColoredModernUI
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 40);
             this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "O";
+            this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -284,11 +284,11 @@ namespace MultiColoredModernUI
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(264, 31);
+            this.lblTitle.Location = new System.Drawing.Point(260, 30);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(73, 24);
+            this.lblTitle.Size = new System.Drawing.Size(146, 24);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "HOME";
+            this.lblTitle.Text = "Menu Principal";
             // 
             // panelDesktopPane
             // 
@@ -311,7 +311,7 @@ namespace MultiColoredModernUI
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // PlataformaSeguros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,8 +319,8 @@ namespace MultiColoredModernUI
             this.Controls.Add(this.panelDesktopPane);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "PlataformaSeguros";
+            this.Text = "PlataformaSeguros";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
