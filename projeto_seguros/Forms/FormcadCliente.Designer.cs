@@ -29,18 +29,18 @@ namespace MultiColoredModernUI.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,12 +48,12 @@ namespace MultiColoredModernUI.Forms
             this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox3
+            // txtCPF
             // 
-            this.textBox3.Location = new System.Drawing.Point(200, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 23);
-            this.textBox3.TabIndex = 22;
+            this.txtCPF.Location = new System.Drawing.Point(200, 100);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(246, 23);
+            this.txtCPF.TabIndex = 22;
             // 
             // label3
             // 
@@ -64,12 +64,12 @@ namespace MultiColoredModernUI.Forms
             this.label3.TabIndex = 21;
             this.label3.Text = "CPF";
             // 
-            // textBox2
+            // txtRg
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 23);
-            this.textBox2.TabIndex = 20;
+            this.txtRg.Location = new System.Drawing.Point(200, 70);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(246, 23);
+            this.txtRg.TabIndex = 20;
             // 
             // label2
             // 
@@ -80,12 +80,12 @@ namespace MultiColoredModernUI.Forms
             this.label2.TabIndex = 19;
             this.label2.Text = "RG";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 23);
-            this.textBox1.TabIndex = 18;
+            this.txtNome.Location = new System.Drawing.Point(200, 40);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(246, 23);
+            this.txtNome.TabIndex = 18;
             // 
             // label1
             // 
@@ -106,13 +106,14 @@ namespace MultiColoredModernUI.Forms
             this.button3.TabIndex = 16;
             this.button3.Text = "Salvar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // txtCep
             // 
-            this.textBox4.Location = new System.Drawing.Point(200, 190);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(246, 23);
-            this.textBox4.TabIndex = 33;
+            this.txtCep.Location = new System.Drawing.Point(200, 190);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(246, 23);
+            this.txtCep.TabIndex = 33;
             // 
             // label6
             // 
@@ -123,12 +124,12 @@ namespace MultiColoredModernUI.Forms
             this.label6.TabIndex = 32;
             this.label6.Text = "Cep";
             // 
-            // textBox5
+            // txtNumero
             // 
-            this.textBox5.Location = new System.Drawing.Point(200, 160);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(246, 23);
-            this.textBox5.TabIndex = 31;
+            this.txtNumero.Location = new System.Drawing.Point(200, 160);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(246, 23);
+            this.txtNumero.TabIndex = 31;
             // 
             // label7
             // 
@@ -139,12 +140,12 @@ namespace MultiColoredModernUI.Forms
             this.label7.TabIndex = 30;
             this.label7.Text = "Número";
             // 
-            // textBox6
+            // txtEndereco
             // 
-            this.textBox6.Location = new System.Drawing.Point(200, 130);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(246, 23);
-            this.textBox6.TabIndex = 29;
+            this.txtEndereco.Location = new System.Drawing.Point(200, 130);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(246, 23);
+            this.txtEndereco.TabIndex = 29;
             // 
             // label8
             // 
@@ -197,17 +198,17 @@ namespace MultiColoredModernUI.Forms
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtRg);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Name = "FormcadCliente";
@@ -218,18 +219,18 @@ namespace MultiColoredModernUI.Forms
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;

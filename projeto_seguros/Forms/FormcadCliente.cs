@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCliente : Form
     {
+        private SqlConnection conexao;
+
+        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog = seg_pessoas; Integrated Security = True";
+
         public FormcadCliente()
         {
             InitializeComponent();
@@ -30,6 +28,15 @@ namespace MultiColoredModernUI.Forms
 
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexao = new(fonte);
+
+            string comando = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
+                             "VALUES ('"+txtNome+"', '"+txtRg+"', '"+txtCPF+"'," +
+                             "        '"+txtEndereco+"', '"+txtNumero+"', '"+txtCep+"'";
         }
     }
 }
