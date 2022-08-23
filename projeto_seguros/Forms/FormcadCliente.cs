@@ -8,7 +8,6 @@ namespace MultiColoredModernUI.Forms
     public partial class FormcadCliente : Form
     {
         private SqlConnection conexao;
-        SqlClientPermission a;
 
         private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog = seg_pessoas; Integrated Security = True";
 
