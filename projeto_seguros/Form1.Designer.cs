@@ -303,10 +303,11 @@ namespace MultiColoredModernUI
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::MultiColoredModernUI.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(189, 84);
+            this.pictureBox1.Image = global::MultiColoredModernUI.Properties.Resources.UINP;
+            this.pictureBox1.Location = new System.Drawing.Point(180, 135);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(229, 229);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

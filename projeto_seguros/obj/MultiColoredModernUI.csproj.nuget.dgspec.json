@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj": {}
+    "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj": {
+    "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
+        "projectUniqueName": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj",
         "projectName": "MultiColoredModernUI",
-        "projectPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
+        "projectPath": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj",
         "packagesPath": "C:\\Users\\Vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\obj\\",
+        "outputPath": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

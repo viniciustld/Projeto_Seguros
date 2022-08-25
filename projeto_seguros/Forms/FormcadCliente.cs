@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Drawing;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MultiColoredModernUI.Forms
@@ -9,7 +9,7 @@ namespace MultiColoredModernUI.Forms
     {
         private SqlConnection conexao;
 
-        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog = seg_pessoas; Integrated Security = True";
+        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
 
         public FormcadCliente()
         {
@@ -31,13 +31,23 @@ namespace MultiColoredModernUI.Forms
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
             SqlConnection conexao = new(fonte);
 
-            string comando = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
-                             "VALUES ('"+txtNome+"', '"+txtRg+"', '"+txtCPF+"'," +
-                             "        '"+txtEndereco+"', '"+txtNumero+"', '"+txtCep+"'";
+            string x = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
+                             "VALUES ('"+txtNome.Text +"', '"+txtRg.Text+"', '"+txtCPF.Text+"'," +
+                             "        '"+txtEndereco.Text+"', '"+txtNumero.Text+"', '"+txtCep.Text+"')";
+
+            SqlCommand comando = new(x, conexao);
+
+            conexao.Open();
+
+            comando.ExecuteReader();
+
+            MessageBox.Show("Dados Inseridos com Sucesso!!");
+
+            conexao.Close();
         }
     }
 }

@@ -35,17 +35,13 @@ namespace MultiColoredModernUI.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCPF
@@ -96,17 +92,17 @@ namespace MultiColoredModernUI.Forms
             this.label1.TabIndex = 17;
             this.label1.Text = "Nome";
             // 
-            // button3
+            // btnSalvar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(200, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 27);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Salvar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Location = new System.Drawing.Point(200, 240);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(80, 30);
+            this.btnSalvar.TabIndex = 16;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtCep
             // 
@@ -156,48 +152,12 @@ namespace MultiColoredModernUI.Forms
             this.label8.TabIndex = 28;
             this.label8.Text = "Endereço";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(200, 250);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(246, 23);
-            this.textBox7.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(50, 250);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 15);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Cidade";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(200, 220);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(246, 23);
-            this.textBox8.TabIndex = 35;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(50, 220);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 15);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Municipio";
-            // 
             // FormcadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNumero);
@@ -210,7 +170,7 @@ namespace MultiColoredModernUI.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSalvar);
             this.Name = "FormcadCliente";
             this.Text = "Cadastrar Cliente";
             this.ResumeLayout(false);
@@ -225,16 +185,12 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label10;
     }
 }
