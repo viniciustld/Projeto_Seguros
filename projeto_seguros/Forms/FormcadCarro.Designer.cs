@@ -39,16 +39,18 @@ namespace MultiColoredModernUI.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.txtcpfCarro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.data001 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.data001)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(44, 100);
+            this.label1.Location = new System.Drawing.Point(44, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 3;
@@ -56,14 +58,16 @@ namespace MultiColoredModernUI.Forms
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(200, 100);
+            this.txtBuscar.Location = new System.Drawing.Point(200, 12);
             this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.PlaceholderText = "Selecione o Cliente";
             this.txtBuscar.Size = new System.Drawing.Size(235, 23);
             this.txtBuscar.TabIndex = 4;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(200, 160);
+            this.txtPlaca.Location = new System.Drawing.Point(200, 251);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(235, 23);
             this.txtPlaca.TabIndex = 6;
@@ -71,7 +75,7 @@ namespace MultiColoredModernUI.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 160);
+            this.label2.Location = new System.Drawing.Point(45, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.TabIndex = 5;
@@ -79,7 +83,7 @@ namespace MultiColoredModernUI.Forms
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(200, 190);
+            this.txtMarca.Location = new System.Drawing.Point(200, 281);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(235, 23);
             this.txtMarca.TabIndex = 8;
@@ -87,7 +91,7 @@ namespace MultiColoredModernUI.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 190);
+            this.label3.Location = new System.Drawing.Point(45, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 15);
             this.label3.TabIndex = 7;
@@ -95,7 +99,7 @@ namespace MultiColoredModernUI.Forms
             // 
             // txtCor
             // 
-            this.txtCor.Location = new System.Drawing.Point(200, 130);
+            this.txtCor.Location = new System.Drawing.Point(200, 221);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(235, 23);
             this.txtCor.TabIndex = 12;
@@ -103,7 +107,7 @@ namespace MultiColoredModernUI.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 130);
+            this.label4.Location = new System.Drawing.Point(45, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 15);
             this.label4.TabIndex = 11;
@@ -111,7 +115,7 @@ namespace MultiColoredModernUI.Forms
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(200, 220);
+            this.txtModelo.Location = new System.Drawing.Point(200, 311);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(235, 23);
             this.txtModelo.TabIndex = 10;
@@ -119,26 +123,27 @@ namespace MultiColoredModernUI.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 220);
+            this.label5.Location = new System.Drawing.Point(45, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Modelo";
             // 
-            // button3
+            // btnSalvar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(200, 300);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 27);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Salvar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Location = new System.Drawing.Point(200, 391);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(80, 27);
+            this.btnSalvar.TabIndex = 17;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtcpfCarro
             // 
-            this.txtcpfCarro.Location = new System.Drawing.Point(200, 250);
+            this.txtcpfCarro.Location = new System.Drawing.Point(200, 341);
             this.txtcpfCarro.Name = "txtcpfCarro";
             this.txtcpfCarro.Size = new System.Drawing.Size(235, 23);
             this.txtcpfCarro.TabIndex = 19;
@@ -146,11 +151,26 @@ namespace MultiColoredModernUI.Forms
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 250);
+            this.label6.Location = new System.Drawing.Point(45, 341);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 15);
             this.label6.TabIndex = 18;
             this.label6.Text = "Cpf";
+            // 
+            // data001
+            // 
+            this.data001.AllowUserToAddRows = false;
+            this.data001.AllowUserToDeleteRows = false;
+            this.data001.AllowUserToOrderColumns = true;
+            this.data001.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.data001.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data001.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.data001.Location = new System.Drawing.Point(124, 41);
+            this.data001.Name = "data001";
+            this.data001.ReadOnly = true;
+            this.data001.RowTemplate.Height = 25;
+            this.data001.Size = new System.Drawing.Size(400, 170);
+            this.data001.TabIndex = 20;
             // 
             // FormcadCarro
             // 
@@ -158,9 +178,10 @@ namespace MultiColoredModernUI.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
+            this.Controls.Add(this.data001);
             this.Controls.Add(this.txtcpfCarro);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtCor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtModelo);
@@ -173,6 +194,7 @@ namespace MultiColoredModernUI.Forms
             this.Controls.Add(this.label1);
             this.Name = "FormcadCarro";
             this.Text = "Cadastrar Carro";
+            ((System.ComponentModel.ISupportInitialize)(this.data001)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,8 +211,9 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtcpfCarro;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView data001;
     }
 }

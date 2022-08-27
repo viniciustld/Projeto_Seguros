@@ -37,7 +37,7 @@ namespace MultiColoredModernUI.Forms
 
             string x = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
                              "VALUES ('"+txtNome.Text +"', '"+txtRg.Text+"', '"+txtCPF.Text+"'," +
-                             "        '"+txtEndereco.Text+"', '"+txtNumero.Text+"', '"+txtCep.Text+"')";
+                             "        '"+txtEndereco.Text+"', '"+txtNumero.Text+"', '"+txtCep.Text+"');";
 
             SqlCommand comando = new(x, conexao);
 
@@ -45,7 +45,7 @@ namespace MultiColoredModernUI.Forms
 
             comando.ExecuteReader();
 
-            MessageBox.Show("Dados Inseridos com Sucesso!!");
+            MessageBox.Show("Dados Inseridos com Sucesso!!!");
 
             conexao.Close();
         }

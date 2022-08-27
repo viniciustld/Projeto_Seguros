@@ -176,5 +176,10 @@ namespace MultiColoredModernUI
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelDesktopPane_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

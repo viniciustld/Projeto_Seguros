@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCarro : Form
     {
+        private SqlConnection conexao;
+
+        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
+
         public FormcadCarro()
         {
             InitializeComponent();
@@ -30,6 +35,53 @@ namespace MultiColoredModernUI.Forms
 
                 }
             }
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SqlConnection conexao = new(fonte);
+
+            if (txtBuscar.Text != "")
+            {
+                data001.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+
+                SqlDataAdapter cmd = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                DataView dv = new DataView();
+
+                string x = "SELECT nome, cpf, rg FROM pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+
+                conexao.Open();
+                cmd = new SqlDataAdapter(x, conexao);
+                cmd.Fill(ds);
+                dv = new DataView(ds.Tables[0]);
+                data001.DataSource = dv;
+                conexao.Close();
+            }
+            else if (txtBuscar.Text == "")
+            {
+                data001.Refresh();
+            }
+            
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexao = new(fonte);
+
+            string q = "INSERT INTO carro (cor, placa, marca, modelo, cpf)" + 
+                        "VALUES ('" + txtCor.Text + "'," + "'" + txtPlaca.Text + "'," +
+                        " '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtcpfCarro.Text + "');";
+
+            SqlCommand comando = new(q, conexao);
+
+            conexao.Open();
+
+            comando.ExecuteReader();
+
+            MessageBox.Show("Dados Inseridos Com Sucesso!!!");
+
+            conexao.Close();
         }
     }
 }

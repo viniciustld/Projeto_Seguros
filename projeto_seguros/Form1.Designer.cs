@@ -298,6 +298,7 @@ namespace MultiColoredModernUI
             this.panelDesktopPane.Name = "panelDesktopPane";
             this.panelDesktopPane.Size = new System.Drawing.Size(628, 422);
             this.panelDesktopPane.TabIndex = 2;
+            this.panelDesktopPane.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktopPane_Paint);
             // 
             // pictureBox1
             // 
@@ -307,7 +308,7 @@ namespace MultiColoredModernUI
             this.pictureBox1.Location = new System.Drawing.Point(180, 135);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(246, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
