@@ -69,19 +69,30 @@ namespace MultiColoredModernUI.Forms
         {
             SqlConnection conexao = new(fonte);
 
-            string q = "INSERT INTO carro (cor, placa, marca, modelo, cpf)" + 
-                        "VALUES ('" + txtCor.Text + "'," + "'" + txtPlaca.Text + "'," +
-                        " '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtcpfCarro.Text + "');";
+            if (txtCor.Text == "" && 
+                txtMarca.Text == "" &&
+                txtModelo.Text == "" &&
+                txtPlaca.Text == "" &&
+                txtcpfCarro.Text == "")
+            {
+                MessageBox.Show("Insira os dados Corretamente");
+            }
+            else
+            {
+                string q = "INSERT INTO carro (cor, placa, marca, modelo, cpf)" +
+            "VALUES ('" + txtCor.Text + "'," + "'" + txtPlaca.Text + "'," +
+            " '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtcpfCarro.Text + "');";
 
-            SqlCommand comando = new(q, conexao);
+                SqlCommand comando = new(q, conexao);
 
-            conexao.Open();
+                conexao.Open();
 
-            comando.ExecuteReader();
+                comando.ExecuteReader();
 
-            MessageBox.Show("Dados Inseridos Com Sucesso!!!");
+                MessageBox.Show("Dados Inseridos Com Sucesso!!!");
 
-            conexao.Close();
+                conexao.Close();
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "03M0OEuRa963ygHswi1hMdPRvROS9dEi1Rhs2JoThrmU7nVTmkQfz2lzKiZT+mB8o6cmLOm3+cYj3yLo31tNxA==",
+  "dgSpecHash": "6O2FVxh0GnH54pJVurorfdA7CJ+fUcvUEzuTnx3RkTPJwyp5nRu7QndmBeSBw45z7RaXkwzqiAqB7tRb8XwIEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj",
+  "projectFilePath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

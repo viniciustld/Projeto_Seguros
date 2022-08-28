@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormconCliente : Form
     {
+        private SqlConnection conexao;
+
+        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
         public FormconCliente()
         {
             InitializeComponent();
@@ -30,8 +28,33 @@ namespace MultiColoredModernUI.Forms
 
                 }
             }
-            label4.ForeColor = ThemeColor.SecondaryColor;
-            label5.ForeColor = ThemeColor.PrimaryColor;
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SqlConnection conexao = new(fonte);
+
+            if (txtBuscar.Text != "")
+            {
+                data003.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+
+                SqlDataAdapter cmd = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                DataView dv = new DataView();
+
+                string x = "SELECT * FROM pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+
+                conexao.Open();
+                cmd = new SqlDataAdapter(x, conexao);
+                cmd.Fill(ds);
+                dv = new DataView(ds.Tables[0]);
+                data003.DataSource = dv;
+                conexao.Close();
+            }
+            else if (txtBuscar.Text == "")
+            {
+                data003.Refresh();
+            }
         }
     }
 }

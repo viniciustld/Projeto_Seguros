@@ -50,7 +50,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(44, 12);
+            this.label1.Location = new System.Drawing.Point(45, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 3;
@@ -60,8 +60,8 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtBuscar.Location = new System.Drawing.Point(200, 12);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.PlaceholderText = "Selecione o Cliente";
-            this.txtBuscar.Size = new System.Drawing.Size(235, 23);
+            this.txtBuscar.PlaceholderText = "Nome do Cliente";
+            this.txtBuscar.Size = new System.Drawing.Size(245, 23);
             this.txtBuscar.TabIndex = 4;
             this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
@@ -69,7 +69,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtPlaca.Location = new System.Drawing.Point(200, 251);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(235, 23);
+            this.txtPlaca.Size = new System.Drawing.Size(245, 23);
             this.txtPlaca.TabIndex = 6;
             // 
             // label2
@@ -85,7 +85,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtMarca.Location = new System.Drawing.Point(200, 281);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(235, 23);
+            this.txtMarca.Size = new System.Drawing.Size(245, 23);
             this.txtMarca.TabIndex = 8;
             // 
             // label3
@@ -101,7 +101,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtCor.Location = new System.Drawing.Point(200, 221);
             this.txtCor.Name = "txtCor";
-            this.txtCor.Size = new System.Drawing.Size(235, 23);
+            this.txtCor.Size = new System.Drawing.Size(245, 23);
             this.txtCor.TabIndex = 12;
             // 
             // label4
@@ -117,7 +117,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtModelo.Location = new System.Drawing.Point(200, 311);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(235, 23);
+            this.txtModelo.Size = new System.Drawing.Size(245, 23);
             this.txtModelo.TabIndex = 10;
             // 
             // label5
@@ -145,7 +145,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtcpfCarro.Location = new System.Drawing.Point(200, 341);
             this.txtcpfCarro.Name = "txtcpfCarro";
-            this.txtcpfCarro.Size = new System.Drawing.Size(235, 23);
+            this.txtcpfCarro.Size = new System.Drawing.Size(245, 23);
             this.txtcpfCarro.TabIndex = 19;
             // 
             // label6
@@ -165,11 +165,11 @@ namespace MultiColoredModernUI.Forms
             this.data001.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.data001.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data001.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.data001.Location = new System.Drawing.Point(124, 41);
+            this.data001.Location = new System.Drawing.Point(200, 41);
             this.data001.Name = "data001";
             this.data001.ReadOnly = true;
             this.data001.RowTemplate.Height = 25;
-            this.data001.Size = new System.Drawing.Size(400, 170);
+            this.data001.Size = new System.Drawing.Size(245, 170);
             this.data001.TabIndex = 20;
             // 
             // FormcadCarro

@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj",
+      "projectUniqueName": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
       "projectName": "MultiColoredModernUI",
-      "projectPath": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\MultiColoredModernUI.csproj",
+      "projectPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
       "packagesPath": "C:\\Users\\Vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinic\\Desktop\\vs codes\\ws-vs2019\\MultiColoredModernUI\\obj\\",
+      "outputPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

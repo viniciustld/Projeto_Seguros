@@ -29,6 +29,7 @@ namespace MultiColoredModernUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlataformaSeguros));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnSetting = new System.Windows.Forms.Button();
             this.aciSeguro = new System.Windows.Forms.Button();
@@ -94,7 +95,7 @@ namespace MultiColoredModernUI
             this.aciSeguro.FlatAppearance.BorderSize = 0;
             this.aciSeguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aciSeguro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.aciSeguro.Image = global::MultiColoredModernUI.Properties.Resources.alarm__1_;
+            this.aciSeguro.Image = ((System.Drawing.Image)(resources.GetObject("aciSeguro.Image")));
             this.aciSeguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aciSeguro.Location = new System.Drawing.Point(0, 320);
             this.aciSeguro.Name = "aciSeguro";
@@ -113,7 +114,7 @@ namespace MultiColoredModernUI
             this.conCarro.FlatAppearance.BorderSize = 0;
             this.conCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.conCarro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.conCarro.Image = global::MultiColoredModernUI.Properties.Resources.bar_chart;
+            this.conCarro.Image = ((System.Drawing.Image)(resources.GetObject("conCarro.Image")));
             this.conCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.conCarro.Location = new System.Drawing.Point(0, 260);
             this.conCarro.Name = "conCarro";
@@ -132,7 +133,7 @@ namespace MultiColoredModernUI
             this.cadCarro.FlatAppearance.BorderSize = 0;
             this.cadCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cadCarro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cadCarro.Image = global::MultiColoredModernUI.Properties.Resources.value__1_;
+            this.cadCarro.Image = ((System.Drawing.Image)(resources.GetObject("cadCarro.Image")));
             this.cadCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cadCarro.Location = new System.Drawing.Point(0, 200);
             this.cadCarro.Name = "cadCarro";
@@ -151,7 +152,7 @@ namespace MultiColoredModernUI
             this.conCliente.FlatAppearance.BorderSize = 0;
             this.conCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.conCliente.ForeColor = System.Drawing.Color.Gainsboro;
-            this.conCliente.Image = global::MultiColoredModernUI.Properties.Resources.shopping_list;
+            this.conCliente.Image = ((System.Drawing.Image)(resources.GetObject("conCliente.Image")));
             this.conCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.conCliente.Location = new System.Drawing.Point(0, 140);
             this.conCliente.Name = "conCliente";
@@ -171,7 +172,7 @@ namespace MultiColoredModernUI
             this.cadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cadCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cadCliente.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cadCliente.Image = global::MultiColoredModernUI.Properties.Resources.shopping_cart__1_;
+            this.cadCliente.Image = ((System.Drawing.Image)(resources.GetObject("cadCliente.Image")));
             this.cadCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cadCliente.Location = new System.Drawing.Point(0, 80);
             this.cadCliente.Name = "cadCliente";
