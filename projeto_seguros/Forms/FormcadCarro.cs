@@ -49,7 +49,7 @@ namespace MultiColoredModernUI.Forms
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT nome, cpf, rg FROM pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT * from carro WHERE nome LIKE '%" + txtBuscar.Text + "%';";
 
                 conexao.Open();
                 cmd = new SqlDataAdapter(x, conexao);
