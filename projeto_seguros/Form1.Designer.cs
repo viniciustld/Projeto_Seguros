@@ -76,7 +76,7 @@ namespace MultiColoredModernUI
             this.btnSetting.FlatAppearance.BorderSize = 0;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSetting.Image = global::MultiColoredModernUI.Properties.Resources.settings;
+            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.Location = new System.Drawing.Point(0, 380);
             this.btnSetting.Name = "btnSetting";
