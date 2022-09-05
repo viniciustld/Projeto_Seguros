@@ -16,5 +16,10 @@ namespace MultiColoredModernUI.Forms
         {
             InitializeComponent();
         }
+
+        private void FormConfiguracoes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,23 +15,11 @@ namespace MultiColoredModernUI.Forms
         public FormaciSeguro()
         {
             InitializeComponent();
-            LoadTheme();
         }
-        public void LoadTheme()
-        {
-            foreach (Control btns in this.Controls)
-            {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btns.BackColor = ThemeColor.PrimaryColor;
-                    btns.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
 
-                }
-            }
-            label4.ForeColor = ThemeColor.SecondaryColor;
-            label5.ForeColor = ThemeColor.PrimaryColor;
+        private void FormaciSeguro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

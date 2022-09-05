@@ -13,21 +13,6 @@ namespace MultiColoredModernUI.Forms
         public FormconCliente()
         {
             InitializeComponent();
-            LoadTheme();
-        }
-        public void LoadTheme()
-        {
-            foreach (Control btns in this.Controls)
-            {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btns.BackColor = ThemeColor.PrimaryColor;
-                    btns.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-
-                }
-            }
         }
 
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)

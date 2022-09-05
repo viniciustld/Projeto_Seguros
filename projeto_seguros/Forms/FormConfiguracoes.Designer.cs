@@ -40,7 +40,7 @@ namespace MultiColoredModernUI.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(232, 228);
+            this.label3.Location = new System.Drawing.Point(50, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 15);
             this.label3.TabIndex = 21;
@@ -49,7 +49,7 @@ namespace MultiColoredModernUI.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(232, 199);
+            this.label2.Location = new System.Drawing.Point(50, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 15);
             this.label2.TabIndex = 19;
@@ -58,7 +58,7 @@ namespace MultiColoredModernUI.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(232, 170);
+            this.label1.Location = new System.Drawing.Point(50, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 15);
             this.label1.TabIndex = 17;
@@ -66,7 +66,8 @@ namespace MultiColoredModernUI.Forms
             // 
             // botao1
             // 
-            this.botao1.Location = new System.Drawing.Point(351, 166);
+            this.botao1.FlatAppearance.BorderSize = 0;
+            this.botao1.Location = new System.Drawing.Point(150, 50);
             this.botao1.Name = "botao1";
             this.botao1.Size = new System.Drawing.Size(100, 23);
             this.botao1.TabIndex = 23;
@@ -75,7 +76,8 @@ namespace MultiColoredModernUI.Forms
             // 
             // botao2
             // 
-            this.botao2.Location = new System.Drawing.Point(351, 195);
+            this.botao2.FlatAppearance.BorderSize = 0;
+            this.botao2.Location = new System.Drawing.Point(150, 80);
             this.botao2.Name = "botao2";
             this.botao2.Size = new System.Drawing.Size(100, 23);
             this.botao2.TabIndex = 24;
@@ -84,7 +86,8 @@ namespace MultiColoredModernUI.Forms
             // 
             // botao3
             // 
-            this.botao3.Location = new System.Drawing.Point(351, 224);
+            this.botao3.FlatAppearance.BorderSize = 0;
+            this.botao3.Location = new System.Drawing.Point(150, 110);
             this.botao3.Name = "botao3";
             this.botao3.Size = new System.Drawing.Size(100, 23);
             this.botao3.TabIndex = 25;
@@ -105,6 +108,7 @@ namespace MultiColoredModernUI.Forms
             this.Controls.Add(this.label1);
             this.Name = "FormConfiguracoes";
             this.Text = "Configurações";
+            this.Load += new System.EventHandler(this.FormConfiguracoes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

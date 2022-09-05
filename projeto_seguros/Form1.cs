@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultiColoredModernUI
@@ -37,19 +31,8 @@ namespace MultiColoredModernUI
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         //Methods
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while  (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
 
-        private void ActivateButton(object btnSender)
+        /*private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
             {
@@ -71,7 +54,7 @@ namespace MultiColoredModernUI
             }
         }
 
-        private void DisableButton()
+        /*private void DisableButton()
         {
             foreach (Control previousBtn in panelMenu.Controls)
             {
@@ -83,7 +66,7 @@ namespace MultiColoredModernUI
 
                 }
             }
-        }
+        }*/
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
@@ -91,7 +74,7 @@ namespace MultiColoredModernUI
             {
                 activateForm.Close();
             }
-            ActivateButton(btnSender);
+            /*activateButton(btnSender);*/
             activateForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -144,8 +127,9 @@ namespace MultiColoredModernUI
 
         private void Reset()
         {
-            DisableButton();
-            lblTitle.Text = "HOME";
+            /*DisableButton();*/
+            lblTitle.Text = "Menu Principal";
+            lblTitle.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
             panelLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
