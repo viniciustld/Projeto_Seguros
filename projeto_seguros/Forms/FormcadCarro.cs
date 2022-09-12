@@ -28,7 +28,7 @@ namespace MultiColoredModernUI.Forms
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT * from pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT nome, rg, cpf from pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
 
                 conexao.Open();
                 cmd = new MySqlDataAdapter(x, conexao);
@@ -58,8 +58,9 @@ namespace MultiColoredModernUI.Forms
             }
             else
             {
-                string q = "INSERT INTO carro (placa, marca, modelo, fk_pessoa_cpf)" +
-                            "VALUES ('" + txtPlaca.Text + "', '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtfkcarro.Text + "')";
+                string q = "INSERT INTO carro (cor, placa, marca, modelo, fk_pessoa_cpf)" +
+                            "VALUES ('" + txtCor.Text + "', '" + txtPlaca.Text + "'," +
+                            " '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtfkcarro.Text + "')";
 
                 MySqlCommand comando = new(q, conexao);
 
@@ -70,12 +71,22 @@ namespace MultiColoredModernUI.Forms
                 MessageBox.Show("Dados Inseridos Com Sucesso!!!");
 
                 conexao.Close();
+
+                // limpeza dos campos de texto pós cadastro
+                {
+                    txtCor.Clear();
+                    txtPlaca.Clear();
+                    txtMarca.Clear();
+                    txtModelo.Clear();
+                    txtfkcarro.Clear();
+                }
             }
         }
 
-        private void data001_MouseClick(object sender, MouseEventArgs e)
+        private void data001_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            string info = data001.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtfkcarro.Text = info;
         }
     }
 }

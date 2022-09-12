@@ -1,15 +1,15 @@
 ﻿using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormconCarro : Form
     {
-        private SqlConnection conexao;
+        private MySqlConnection conexao;
 
-        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
+        private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
 
         public FormconCarro()
         {
@@ -18,20 +18,20 @@ namespace MultiColoredModernUI.Forms
 
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SqlConnection conexao = new(fonte);
+            MySqlConnection conexao = new(fonte);
 
             if (txtBuscar.Text != "")
             {
                 data002.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
 
-                SqlDataAdapter cmd = new SqlDataAdapter();
+                MySqlDataAdapter cmd = new MySqlDataAdapter();
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT * FROM carro WHERE cpf LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT * FROM carro WHERE placa LIKE '%" + txtBuscar.Text + "%';";
 
                 conexao.Open();
-                cmd = new SqlDataAdapter(x, conexao);
+                cmd = new MySqlDataAdapter(x, conexao);
                 cmd.Fill(ds);
                 dv = new DataView(ds.Tables[0]);
                 data002.DataSource = dv;

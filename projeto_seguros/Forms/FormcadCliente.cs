@@ -44,6 +44,16 @@ namespace MultiColoredModernUI.Forms
                 MessageBox.Show("Dados Inseridos com Sucesso!!!");
 
                 conexao.Close();
+
+                // limpeza dos campos de texto pós cadastro
+                {
+                    txtNome.Clear();
+                    txtRg.Clear();
+                    txtCPF.Clear();
+                    txtEndereco.Clear();
+                    txtNumero.Clear();
+                    txtCep.Clear();
+                }
             }
         }
     }
