@@ -49,7 +49,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.textBox1.Location = new System.Drawing.Point(170, 50);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Nome do Cliente";
+            this.textBox1.PlaceholderText = "Carro";
             this.textBox1.Size = new System.Drawing.Size(200, 23);
             this.textBox1.TabIndex = 1;
             // 
@@ -58,9 +58,9 @@ namespace MultiColoredModernUI.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(40, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.Size = new System.Drawing.Size(99, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Selecione o Cliente";
+            this.label1.Text = "Selecione o Carro";
             // 
             // FormaciSeguro
             // 

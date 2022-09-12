@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCliente : Form
     {
-        private SqlConnection conexao;
+        private MySqlConnection conexao;
 
-        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
+        private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
 
         public FormcadCliente()
         {
@@ -18,7 +18,7 @@ namespace MultiColoredModernUI.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            SqlConnection conexao = new(fonte);
+            MySqlConnection conexao = new(fonte);
 
             if (txtNome.Text == "" &&
                 txtCPF.Text == "" &&
@@ -35,7 +35,7 @@ namespace MultiColoredModernUI.Forms
                                  "VALUES ('" + txtNome.Text + "', '" + txtRg.Text + "', '" + txtCPF.Text + "'," +
                                  "        '" + txtEndereco.Text + "', '" + txtNumero.Text + "', '" + txtCep.Text + "');";
 
-                SqlCommand comando = new(x, conexao);
+                MySqlCommand comando = new(x, conexao);
 
                 conexao.Open();
 

@@ -40,7 +40,7 @@ namespace MultiColoredModernUI.Forms
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtcpfCarro = new System.Windows.Forms.TextBox();
+            this.txtfkcarro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.data001 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.data001)).BeginInit();
@@ -141,12 +141,12 @@ namespace MultiColoredModernUI.Forms
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // txtcpfCarro
+            // txtfkcarro
             // 
-            this.txtcpfCarro.Location = new System.Drawing.Point(200, 341);
-            this.txtcpfCarro.Name = "txtcpfCarro";
-            this.txtcpfCarro.Size = new System.Drawing.Size(245, 23);
-            this.txtcpfCarro.TabIndex = 19;
+            this.txtfkcarro.Location = new System.Drawing.Point(200, 341);
+            this.txtfkcarro.Name = "txtfkcarro";
+            this.txtfkcarro.Size = new System.Drawing.Size(245, 23);
+            this.txtfkcarro.TabIndex = 19;
             // 
             // label6
             // 
@@ -171,6 +171,7 @@ namespace MultiColoredModernUI.Forms
             this.data001.RowTemplate.Height = 25;
             this.data001.Size = new System.Drawing.Size(245, 170);
             this.data001.TabIndex = 20;
+            this.data001.MouseClick += new System.Windows.Forms.MouseEventHandler(this.data001_MouseClick);
             // 
             // FormcadCarro
             // 
@@ -179,7 +180,7 @@ namespace MultiColoredModernUI.Forms
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
             this.Controls.Add(this.data001);
-            this.Controls.Add(this.txtcpfCarro);
+            this.Controls.Add(this.txtfkcarro);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtCor);
@@ -212,7 +213,7 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox txtcpfCarro;
+        private System.Windows.Forms.TextBox txtfkcarro;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView data001;
     }

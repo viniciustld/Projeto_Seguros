@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCarro : Form
     {
-        private SqlConnection conexao;
+        private MySqlConnection conexao;
 
-        private string fonte = "Data Source=DESKTOP-6B9J46M;Initial Catalog=seguros;Integrated Security=True";
+        private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
 
         public FormcadCarro()
         {
@@ -24,20 +18,20 @@ namespace MultiColoredModernUI.Forms
 
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SqlConnection conexao = new(fonte);
+            MySqlConnection conexao = new(fonte);
 
             if (txtBuscar.Text != "")
             {
                 data001.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
 
-                SqlDataAdapter cmd = new SqlDataAdapter();
+                MySqlDataAdapter cmd = new MySqlDataAdapter();
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT * from carro WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT * from pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
 
                 conexao.Open();
-                cmd = new SqlDataAdapter(x, conexao);
+                cmd = new MySqlDataAdapter(x, conexao);
                 cmd.Fill(ds);
                 dv = new DataView(ds.Tables[0]);
                 data001.DataSource = dv;
@@ -52,23 +46,22 @@ namespace MultiColoredModernUI.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            SqlConnection conexao = new(fonte);
+            MySqlConnection conexao = new(fonte);
 
             if (txtCor.Text == "" && 
                 txtMarca.Text == "" &&
                 txtModelo.Text == "" &&
                 txtPlaca.Text == "" &&
-                txtcpfCarro.Text == "")
+                txtfkcarro.Text == "")
             {
                 MessageBox.Show("Insira os dados Corretamente");
             }
             else
             {
-                string q = "INSERT INTO carro (cor, placa, marca, modelo, cpf)" +
-            "VALUES ('" + txtCor.Text + "'," + "'" + txtPlaca.Text + "'," +
-            " '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtcpfCarro.Text + "');";
+                string q = "INSERT INTO carro (placa, marca, modelo, fk_pessoa_cpf)" +
+                            "VALUES ('" + txtPlaca.Text + "', '" + txtMarca.Text + "', '" + txtModelo.Text + "', '" + txtfkcarro.Text + "')";
 
-                SqlCommand comando = new(q, conexao);
+                MySqlCommand comando = new(q, conexao);
 
                 conexao.Open();
 
@@ -78,6 +71,11 @@ namespace MultiColoredModernUI.Forms
 
                 conexao.Close();
             }
+        }
+
+        private void data001_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

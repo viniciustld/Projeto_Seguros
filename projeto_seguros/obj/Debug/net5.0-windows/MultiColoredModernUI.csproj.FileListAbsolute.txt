@@ -62,3 +62,11 @@ C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.csproj.CopyComplete
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\ZstdNet.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
