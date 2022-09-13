@@ -28,7 +28,8 @@ namespace MultiColoredModernUI.Forms
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT * FROM carro WHERE placa LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT pessoa.nome, pessoa.cpf, carro.cor, carro.placa, carro.modelo, carro.marca FROM pessoa RIGHT OUTER JOIN carro ON pessoa.cpf = carro.fk_pessoa_cpf WHERE cpf LIKE '%" + txtBuscar.Text + "%';";
+
 
                 conexao.Open();
                 cmd = new MySqlDataAdapter(x, conexao);

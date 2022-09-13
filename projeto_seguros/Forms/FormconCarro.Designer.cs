@@ -49,7 +49,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtBuscar.Location = new System.Drawing.Point(120, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.PlaceholderText = "Nome do Cliente";
+            this.txtBuscar.PlaceholderText = "CPF do Cliente";
             this.txtBuscar.Size = new System.Drawing.Size(245, 23);
             this.txtBuscar.TabIndex = 18;
             this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
@@ -59,9 +59,9 @@ namespace MultiColoredModernUI.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 15);
+            this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Selecione o Carro";
+            this.label1.Text = "Selecione a Pessoa";
             // 
             // FormconCarro
             // 
