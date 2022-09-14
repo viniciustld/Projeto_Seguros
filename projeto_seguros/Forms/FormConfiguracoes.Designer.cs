@@ -32,9 +32,9 @@ namespace MultiColoredModernUI.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.botao1 = new System.Windows.Forms.Button();
-            this.botao2 = new System.Windows.Forms.Button();
-            this.botao3 = new System.Windows.Forms.Button();
+            this.btnColor = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -64,35 +64,35 @@ namespace MultiColoredModernUI.Forms
             this.label1.TabIndex = 17;
             this.label1.Text = "Modo Noturno";
             // 
-            // botao1
+            // btnColor
             // 
-            this.botao1.FlatAppearance.BorderSize = 0;
-            this.botao1.Location = new System.Drawing.Point(150, 50);
-            this.botao1.Name = "botao1";
-            this.botao1.Size = new System.Drawing.Size(100, 23);
-            this.botao1.TabIndex = 23;
-            this.botao1.Text = "Ligar/Desligar";
-            this.botao1.UseVisualStyleBackColor = true;
+            this.btnColor.FlatAppearance.BorderSize = 0;
+            this.btnColor.Location = new System.Drawing.Point(150, 50);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(100, 23);
+            this.btnColor.TabIndex = 23;
+            this.btnColor.Text = "Ligar/Desligar";
+            this.btnColor.UseVisualStyleBackColor = true;
             // 
-            // botao2
+            // btnClear
             // 
-            this.botao2.FlatAppearance.BorderSize = 0;
-            this.botao2.Location = new System.Drawing.Point(150, 80);
-            this.botao2.Name = "botao2";
-            this.botao2.Size = new System.Drawing.Size(100, 23);
-            this.botao2.TabIndex = 24;
-            this.botao2.Text = "Limpar";
-            this.botao2.UseVisualStyleBackColor = true;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.Location = new System.Drawing.Point(150, 80);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(100, 23);
+            this.btnClear.TabIndex = 24;
+            this.btnClear.Text = "Limpar";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // botao3
+            // BtnExit
             // 
-            this.botao3.FlatAppearance.BorderSize = 0;
-            this.botao3.Location = new System.Drawing.Point(150, 110);
-            this.botao3.Name = "botao3";
-            this.botao3.Size = new System.Drawing.Size(100, 23);
-            this.botao3.TabIndex = 25;
-            this.botao3.Text = "Sair";
-            this.botao3.UseVisualStyleBackColor = true;
+            this.BtnExit.FlatAppearance.BorderSize = 0;
+            this.BtnExit.Location = new System.Drawing.Point(150, 110);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(100, 23);
+            this.BtnExit.TabIndex = 25;
+            this.BtnExit.Text = "Sair";
+            this.BtnExit.UseVisualStyleBackColor = true;
             // 
             // FormConfiguracoes
             // 
@@ -100,9 +100,9 @@ namespace MultiColoredModernUI.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
-            this.Controls.Add(this.botao3);
-            this.Controls.Add(this.botao2);
-            this.Controls.Add(this.botao1);
+            this.Controls.Add(this.BtnExit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnColor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -118,8 +118,8 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button botao1;
-        private System.Windows.Forms.Button botao2;
-        private System.Windows.Forms.Button botao3;
+        private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

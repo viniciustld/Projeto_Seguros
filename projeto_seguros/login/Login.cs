@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MultiColoredModernUI.login;
 
 namespace MultiColoredModernUI.Forms
 {
@@ -15,7 +16,7 @@ namespace MultiColoredModernUI.Forms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Logar_Click(object sender, EventArgs e)
         {
             MySqlConnection conexao = new(fonte);
 
@@ -27,8 +28,6 @@ namespace MultiColoredModernUI.Forms
             else
             {
                 MySqlDataReader dr;
-                string l = "SELECT * FROM funcionario" +
-                           "WHERE nome = '%" +txtPass.Text + "%' AND senha = '%" +txtPass.Text+ "%';";
 
                 MySqlCommand cmd = new MySqlCommand();
                 conexao.Open();
@@ -37,7 +36,11 @@ namespace MultiColoredModernUI.Forms
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    MessageBox.Show("Logado Com Sucesso!!!");
+                    DialogResult m = MessageBox.Show("Logado Com Sucesso!!!", "", MessageBoxButtons.OK);
+                    if (m == DialogResult.OK)
+                    {
+                        this.Close();
+                    }
                     {
                         txtUser.Clear();
                         txtPass.Clear();
@@ -54,6 +57,12 @@ namespace MultiColoredModernUI.Forms
                 conexao.Close();
             }
 
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            CriarLogin cl = new CriarLogin();
+            cl.Show();
         }
     }
 }

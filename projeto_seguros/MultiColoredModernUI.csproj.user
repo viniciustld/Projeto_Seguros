@@ -22,6 +22,9 @@
     <Compile Update="Forms\FormConfiguracoes.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="login\CriarLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="login\Login.cs">
       <SubType>Form</SubType>
     </Compile>

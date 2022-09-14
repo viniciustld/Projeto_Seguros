@@ -45,7 +45,7 @@ namespace MultiColoredModernUI.Forms
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Logar";
             this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.Logar_Click);
             // 
             // label1
             // 
@@ -67,6 +67,7 @@ namespace MultiColoredModernUI.Forms
             // 
             this.txtPass.Location = new System.Drawing.Point(100, 100);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(150, 23);
             this.txtPass.TabIndex = 4;
             // 
@@ -87,13 +88,14 @@ namespace MultiColoredModernUI.Forms
             this.btnCreate.TabIndex = 5;
             this.btnCreate.Text = "Criar Conta";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(306, 283);
+            this.ClientSize = new System.Drawing.Size(304, 281);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label2);
