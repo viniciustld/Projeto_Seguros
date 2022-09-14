@@ -42,7 +42,6 @@ namespace MultiColoredModernUI.Forms
                         txtUser.Clear();
                         txtPass.Clear();
                     }
-                    Application.Run(new PlataformaSeguros());
                 }
                 else
                 {
