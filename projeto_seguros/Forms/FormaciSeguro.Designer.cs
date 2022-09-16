@@ -29,38 +29,59 @@ namespace MultiColoredModernUI.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.data003 = new System.Windows.Forms.DataGridView();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAcionar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.data003)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // data003
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 200);
-            this.dataGridView1.TabIndex = 0;
+            this.data003.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.data003.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data003.Location = new System.Drawing.Point(12, 40);
+            this.data003.Name = "data003";
+            this.data003.RowTemplate.Height = 25;
+            this.data003.Size = new System.Drawing.Size(600, 200);
+            this.data003.TabIndex = 0;
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Carro";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtBuscar.Location = new System.Drawing.Point(120, 5);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.PlaceholderText = "Cpf do Cliente";
+            this.txtBuscar.Size = new System.Drawing.Size(200, 23);
+            this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 50);
+            this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Selecione o Carro";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(12, 261);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btnAcionar
+            // 
+            this.btnAcionar.Location = new System.Drawing.Point(150, 261);
+            this.btnAcionar.Name = "btnAcionar";
+            this.btnAcionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAcionar.TabIndex = 5;
+            this.btnAcionar.Text = "Acionar";
+            this.btnAcionar.UseVisualStyleBackColor = true;
             // 
             // FormaciSeguro
             // 
@@ -68,13 +89,15 @@ namespace MultiColoredModernUI.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
+            this.Controls.Add(this.btnAcionar);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.data003);
             this.Name = "FormaciSeguro";
             this.Text = "Acionar Seguro";
             this.Load += new System.EventHandler(this.FormaciSeguro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data003)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +105,10 @@ namespace MultiColoredModernUI.Forms
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView data003;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAcionar;
     }
 }

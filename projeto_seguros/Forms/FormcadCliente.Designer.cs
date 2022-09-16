@@ -42,6 +42,7 @@ namespace MultiColoredModernUI.Forms
             this.label7 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtCPF
@@ -152,12 +153,25 @@ namespace MultiColoredModernUI.Forms
             this.label8.TabIndex = 28;
             this.label8.Text = "Endereço";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Location = new System.Drawing.Point(366, 240);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(80, 41);
+            this.btnEdit.TabIndex = 34;
+            this.btnEdit.Text = "Editar Cadastro ";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // FormcadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNumero);
@@ -192,5 +206,6 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
