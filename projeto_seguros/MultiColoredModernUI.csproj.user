@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Forms\FormEditPessoa.cs">
+    <Compile Update="carro_veiculo\FormEditCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="cliente_pessoa\FormEditPessoa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\PlataformaSeguros.cs">
@@ -10,16 +13,16 @@
     <Compile Update="Forms\FormaciSeguro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormcadCliente.cs">
+    <Compile Update="cliente_pessoa\FormcadCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormconCliente.cs">
+    <Compile Update="cliente_pessoa\FormconCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormcadCarro.cs">
+    <Compile Update="carro_veiculo\FormcadCarro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormconCarro.cs">
+    <Compile Update="carro_veiculo\FormconCarro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FormConfiguracoes.cs">

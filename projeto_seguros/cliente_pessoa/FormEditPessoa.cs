@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace MultiColoredModernUI.Forms
 {
-    public partial class FormcadCliente : Form
+    public partial class FormEditPessoa : Form
     {
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
-
-        public FormcadCliente()
+        public FormEditPessoa()
         {
             InitializeComponent();
         }
@@ -21,8 +22,6 @@ namespace MultiColoredModernUI.Forms
             MySqlConnection conexao = new(fonte);
 
             if (txtNome.Text == "" &&
-                txtCPF.Text == "" &&
-                txtRg.Text == "" &&
                 txtEndereco.Text == "" &&
                 txtNumero.Text == "" &&
                 txtCep.Text == "")
@@ -31,9 +30,14 @@ namespace MultiColoredModernUI.Forms
             }
             else
             {
-                string x = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
-                                 "VALUES ('" + txtNome.Text + "', '" + txtRg.Text + "', '" + txtCPF.Text + "'," +
-                                 "        '" + txtEndereco.Text + "', '" + txtNumero.Text + "', '" + txtCep.Text + "');";
+                string x = "UPDATE pessoa " +
+                           "SET " +
+                           "    nome = '" + txtNome.Text + "'," +
+                           "    endereco = '" + txtEndereco.Text + "'," +
+                           "    numero = '" + txtNumero.Text + "', " +
+                           "    cep = '" + txtCep.Text + "'" +
+                           "WHERE " +
+                           "    nome = '" + txtNomeAlvo.Text + "';";
 
                 MySqlCommand comando = new(x, conexao);
 
@@ -41,26 +45,19 @@ namespace MultiColoredModernUI.Forms
 
                 comando.ExecuteReader();
 
-                MessageBox.Show("Dados Inseridos com Sucesso!!!");
+                MessageBox.Show("Dados Alterados com Sucesso!!!");
 
                 conexao.Close();
 
                 // limpeza dos campos de texto pós cadastro
                 {
+                    txtNomeAlvo.Clear();
                     txtNome.Clear();
-                    txtRg.Clear();
-                    txtCPF.Clear();
                     txtEndereco.Clear();
                     txtNumero.Clear();
                     txtCep.Clear();
                 }
             }
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            FormEditPessoa ep = new FormEditPessoa();
-            ep.Show();
         }
     }
 }

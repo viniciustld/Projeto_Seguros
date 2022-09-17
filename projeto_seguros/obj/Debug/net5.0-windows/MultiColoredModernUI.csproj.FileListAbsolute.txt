@@ -73,3 +73,4 @@ C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.Login.resources
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.login.CriarLogin.resources
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormEditPessoa.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormEditCarro.resources

@@ -39,10 +39,13 @@ namespace MultiColoredModernUI.Forms
             // 
             // data003
             // 
+            this.data003.AllowUserToAddRows = false;
+            this.data003.AllowUserToDeleteRows = false;
             this.data003.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.data003.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data003.Location = new System.Drawing.Point(12, 40);
             this.data003.Name = "data003";
+            this.data003.ReadOnly = true;
             this.data003.RowTemplate.Height = 25;
             this.data003.Size = new System.Drawing.Size(600, 200);
             this.data003.TabIndex = 0;

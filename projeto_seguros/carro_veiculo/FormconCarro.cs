@@ -44,6 +44,12 @@ namespace MultiColoredModernUI.Forms
             }
 
         }
+
+        private void btnEdit_Click(object sender, System.EventArgs e)
+        {
+            FormEditCarro ec = new FormEditCarro();
+            ec.Show();
+        }
     }
 
 

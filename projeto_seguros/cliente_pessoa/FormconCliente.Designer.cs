@@ -32,18 +32,23 @@ namespace MultiColoredModernUI.Forms
             this.data003 = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data003)).BeginInit();
             this.SuspendLayout();
             // 
             // data003
             // 
+            this.data003.AllowUserToAddRows = false;
+            this.data003.AllowUserToDeleteRows = false;
             this.data003.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.data003.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data003.Location = new System.Drawing.Point(12, 40);
             this.data003.Name = "data003";
+            this.data003.ReadOnly = true;
             this.data003.RowTemplate.Height = 25;
             this.data003.Size = new System.Drawing.Size(600, 200);
             this.data003.TabIndex = 27;
+            this.data003.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data003_CellContentDoubleClick);
             // 
             // txtBuscar
             // 
@@ -63,12 +68,25 @@ namespace MultiColoredModernUI.Forms
             this.label1.TabIndex = 17;
             this.label1.Text = "Selecione o Cliente";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Location = new System.Drawing.Point(10, 260);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(110, 25);
+            this.btnEdit.TabIndex = 35;
+            this.btnEdit.Text = "Editar Cadastro ";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // FormconCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.data003);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
@@ -85,5 +103,6 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.DataGridView data003;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using MySql.Data.MySqlClient;
+using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
-    public partial class FormEditPessoa : Form
+    public partial class FormcadCliente : Form
     {
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
-        public FormEditPessoa()
+
+        public FormcadCliente()
         {
             InitializeComponent();
         }
@@ -32,16 +31,9 @@ namespace MultiColoredModernUI.Forms
             }
             else
             {
-                string x = "UPDATE pessoa " +
-                           "SET " +
-                           "    nome = '" + txtNome.Text + "'," +
-                           "    rg = '" + txtRg.Text + "', " +
-                           "    cpf = '" + txtCPF.Text + "'," +
-                           "    endereco = '" + txtEndereco.Text + "'," +
-                           "    numero = '" + txtNumero.Text + "', " +
-                           "    cep = '" + txtCep.Text + "'" +
-                           "WHERE " +
-                           "    nome = '" + txtNomeAlvo.Text + "';";
+                string x = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
+                                 "VALUES ('" + txtNome.Text + "', '" + txtRg.Text + "', '" + txtCPF.Text + "'," +
+                                 "        '" + txtEndereco.Text + "', '" + txtNumero.Text + "', '" + txtCep.Text + "');";
 
                 MySqlCommand comando = new(x, conexao);
 
@@ -49,13 +41,12 @@ namespace MultiColoredModernUI.Forms
 
                 comando.ExecuteReader();
 
-                MessageBox.Show("Dados Alterados com Sucesso!!!");
+                MessageBox.Show("Dados Inseridos com Sucesso!!!");
 
                 conexao.Close();
 
                 // limpeza dos campos de texto pós cadastro
                 {
-                    txtNomeAlvo.Clear();
                     txtNome.Clear();
                     txtRg.Clear();
                     txtCPF.Clear();

@@ -32,15 +32,19 @@ namespace MultiColoredModernUI.Forms
             this.data002 = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data002)).BeginInit();
             this.SuspendLayout();
             // 
             // data002
             // 
+            this.data002.AllowUserToAddRows = false;
+            this.data002.AllowUserToDeleteRows = false;
             this.data002.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.data002.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data002.Location = new System.Drawing.Point(12, 40);
             this.data002.Name = "data002";
+            this.data002.ReadOnly = true;
             this.data002.RowTemplate.Height = 25;
             this.data002.Size = new System.Drawing.Size(600, 200);
             this.data002.TabIndex = 27;
@@ -63,12 +67,25 @@ namespace MultiColoredModernUI.Forms
             this.label1.TabIndex = 17;
             this.label1.Text = "Selecione a Pessoa";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Location = new System.Drawing.Point(10, 260);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(110, 25);
+            this.btnEdit.TabIndex = 36;
+            this.btnEdit.Text = "Editar Cadastro ";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // FormconCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.data002);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
@@ -85,5 +102,6 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.DataGridView data002;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
