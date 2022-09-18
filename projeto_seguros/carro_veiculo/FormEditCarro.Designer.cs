@@ -153,7 +153,7 @@ namespace MultiColoredModernUI.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPlacaAlvo);
             this.Name = "FormEditCarro";
-            this.Text = "FormEditCarro";
+            this.Text = "Editar Informações do veículo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

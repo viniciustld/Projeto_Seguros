@@ -50,7 +50,51 @@ namespace MultiColoredModernUI.Forms
             FormEditCarro ec = new FormEditCarro();
             ec.Show();
         }
+
+        private void data002_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string m = "Tem Certeza que deseja Excluir? ";
+            string c = "Excluir";
+            MessageBoxButtons b = MessageBoxButtons.YesNo;
+            DialogResult r;
+
+            r = MessageBox.Show(m, c, b);
+            if (r == DialogResult.Yes)
+            {
+                MySqlConnection conexao = new(fonte);
+
+                // deletando qualquer veiculo no nome da pessoa
+
+                string info1 = data002.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+                string y = "DELETE FROM carro WHERE fk_pessoa_cpf = '" + info1 + "'";
+
+                MySqlCommand comando1 = new(y, conexao);
+
+                conexao.Open();
+
+                comando1.ExecuteReader();
+
+                conexao.Close();
+
+                // deletando a pessoa
+
+                string info = data002.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+                string x = "DELETE FROM pessoa WHERE nome = '" + info + "'";
+
+                MySqlCommand comando = new(x, conexao);
+
+                conexao.Open();
+
+                comando.ExecuteReader();
+
+                MessageBox.Show("Cliente Deletado Com Sucesso!!!");
+
+                conexao.Close();
+            }
+        }
+
+
     }
-
-
 }

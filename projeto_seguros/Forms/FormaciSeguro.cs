@@ -7,18 +7,13 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class FormaciSeguro : Form
     {
-        MySqlConnection conexoa;
+        MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
 
         public FormaciSeguro()
         {
             InitializeComponent();
-        }
-
-        private void FormaciSeguro_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
@@ -47,6 +42,12 @@ namespace MultiColoredModernUI.Forms
             {
                 data003.Refresh();
             }
+        }
+
+        private void btnAcionar_Click(object sender, EventArgs e)
+        {
+            AcionarSeguro acionar = new AcionarSeguro();
+            acionar.Show();
         }
     }
 }

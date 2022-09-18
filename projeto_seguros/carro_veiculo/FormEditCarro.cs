@@ -63,6 +63,8 @@ namespace MultiColoredModernUI.Forms
                     txtMarca.Clear();
                 }
 
+                this.Close();
+
             }
         }
     }

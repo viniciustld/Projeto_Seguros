@@ -7,6 +7,9 @@
     <Compile Update="cliente_pessoa\FormEditPessoa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\AcionarSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\PlataformaSeguros.cs">
       <SubType>Form</SubType>
     </Compile>

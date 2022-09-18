@@ -48,6 +48,7 @@ namespace MultiColoredModernUI.Forms
             this.data002.RowTemplate.Height = 25;
             this.data002.Size = new System.Drawing.Size(600, 200);
             this.data002.TabIndex = 27;
+            this.data002.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data002_CellContentDoubleClick);
             // 
             // txtBuscar
             // 

@@ -32,7 +32,6 @@ namespace MultiColoredModernUI.Forms
             this.data003 = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAcionar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data003)).BeginInit();
             this.SuspendLayout();
@@ -68,23 +67,15 @@ namespace MultiColoredModernUI.Forms
             this.label1.TabIndex = 2;
             this.label1.Text = "Selecione o Carro";
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Location = new System.Drawing.Point(12, 261);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 4;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            // 
             // btnAcionar
             // 
-            this.btnAcionar.Location = new System.Drawing.Point(150, 261);
+            this.btnAcionar.Location = new System.Drawing.Point(12, 250);
             this.btnAcionar.Name = "btnAcionar";
             this.btnAcionar.Size = new System.Drawing.Size(75, 23);
             this.btnAcionar.TabIndex = 5;
             this.btnAcionar.Text = "Acionar";
             this.btnAcionar.UseVisualStyleBackColor = true;
+            this.btnAcionar.Click += new System.EventHandler(this.btnAcionar_Click);
             // 
             // FormaciSeguro
             // 
@@ -93,13 +84,11 @@ namespace MultiColoredModernUI.Forms
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
             this.Controls.Add(this.btnAcionar);
-            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.data003);
             this.Name = "FormaciSeguro";
             this.Text = "Acionar Seguro";
-            this.Load += new System.EventHandler(this.FormaciSeguro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data003)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,7 +100,6 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.DataGridView data003;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAcionar;
     }
 }
