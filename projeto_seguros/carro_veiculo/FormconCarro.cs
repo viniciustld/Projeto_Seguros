@@ -9,7 +9,7 @@ namespace MultiColoredModernUI.Forms
     {
         private MySqlConnection conexao;
 
-        private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
+        private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
 
         public FormconCarro()
         {
@@ -75,9 +75,11 @@ namespace MultiColoredModernUI.Forms
 
                 comando1.ExecuteReader();
 
+                MessageBox.Show("Veículo Deletado Com Sucesso!!!");
+
                 conexao.Close();
 
-                // deletando a pessoa
+                /* deletando a pessoa
 
                 string info = data002.Rows[e.RowIndex].Cells[0].Value.ToString();
 
@@ -91,7 +93,7 @@ namespace MultiColoredModernUI.Forms
 
                 MessageBox.Show("Cliente Deletado Com Sucesso!!!");
 
-                conexao.Close();
+                conexao.Close();*/
             }
         }
 

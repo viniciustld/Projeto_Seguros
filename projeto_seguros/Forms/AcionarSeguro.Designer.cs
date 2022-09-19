@@ -159,7 +159,8 @@ namespace MultiColoredModernUI.Forms
             // 
             this.data003.AllowUserToAddRows = false;
             this.data003.AllowUserToDeleteRows = false;
-            this.data003.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.data003.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.data003.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data003.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data003.Location = new System.Drawing.Point(50, 50);
             this.data003.Name = "data003";
@@ -175,6 +176,7 @@ namespace MultiColoredModernUI.Forms
             this.txtfk_carro_placa.Name = "txtfk_carro_placa";
             this.txtfk_carro_placa.Size = new System.Drawing.Size(200, 23);
             this.txtfk_carro_placa.TabIndex = 14;
+            this.txtfk_carro_placa.Visible = false;
             // 
             // AcionarSeguro
             // 

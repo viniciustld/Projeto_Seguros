@@ -40,7 +40,8 @@ namespace MultiColoredModernUI.Forms
             // 
             this.data003.AllowUserToAddRows = false;
             this.data003.AllowUserToDeleteRows = false;
-            this.data003.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.data003.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.data003.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data003.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data003.Location = new System.Drawing.Point(12, 40);
             this.data003.Name = "data003";

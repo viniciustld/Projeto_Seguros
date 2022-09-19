@@ -147,20 +147,22 @@ namespace MultiColoredModernUI.Forms
             this.txtfkcarro.ReadOnly = true;
             this.txtfkcarro.Size = new System.Drawing.Size(245, 23);
             this.txtfkcarro.TabIndex = 19;
+            this.txtfkcarro.Visible = false;
             // 
             // data001
             // 
             this.data001.AllowUserToAddRows = false;
             this.data001.AllowUserToDeleteRows = false;
             this.data001.AllowUserToOrderColumns = true;
-            this.data001.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.data001.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.data001.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data001.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data001.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.data001.Location = new System.Drawing.Point(200, 41);
+            this.data001.Location = new System.Drawing.Point(200, 40);
             this.data001.Name = "data001";
             this.data001.ReadOnly = true;
             this.data001.RowTemplate.Height = 25;
-            this.data001.Size = new System.Drawing.Size(245, 170);
+            this.data001.Size = new System.Drawing.Size(300, 170);
             this.data001.TabIndex = 20;
             this.data001.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data001_CellContentDoubleClick);
             // 

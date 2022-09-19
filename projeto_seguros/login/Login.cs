@@ -10,7 +10,7 @@ namespace MultiColoredModernUI.Forms
     {
         private MySqlConnection conexao;
 
-        private string fonte = "server=127.0.0.1;user id=root;password='2345P@s58942';persistsecurityinfo=True;database=pim";
+        private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
         public Login()
         {
             InitializeComponent();
