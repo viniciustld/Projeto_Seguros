@@ -7,6 +7,8 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCliente : Form
     {
+        // gerando conexao com o banco de dados
+
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
@@ -20,26 +22,43 @@ namespace MultiColoredModernUI.Forms
         {
             MySqlConnection conexao = new(fonte);
 
-            if (txtNome.Text == "" &&
-                txtCPF.Text == "" &&
-                txtRg.Text == "" &&
-                txtEndereco.Text == "" &&
-                txtNumero.Text == "" &&
-                txtCep.Text == "")
+            // Validador de credenciais
+
+            string nome = txtNome.Text;
+            string rg = txtRg.Text;
+            string cpf = txtCPF.Text;
+            string end = txtEndereco.Text;
+            string num = txtNumero.Text;
+            string cep = txtCep.Text;
+            if (CpfUtils.IsValid(cpf))
+            {
+                MessageBox.Show("Cpf Validado com sucesso!!!");
+            }
+            else
+            {
+                MessageBox.Show("Cpf Inválido, Tente novamente!!!");
+                txtCPF.Clear();
+                return;
+            }
+
+            // verificação de campos chave e execução do comando no banco de dados
+
+            if (nome == "" || rg == "" || cpf == "" || end == "" || num == "" || cep == "")
             {
                 MessageBox.Show("Insira os dados Corretamente");
             }
             else
             {
                 string x = "INSERT INTO pessoa (nome, rg, cpf, endereco, numero, cep)" +
-                                 "VALUES ('" + txtNome.Text + "', '" + txtRg.Text + "', '" + txtCPF.Text + "'," +
-                                 "        '" + txtEndereco.Text + "', '" + txtNumero.Text + "', '" + txtCep.Text + "');";
+                                 "VALUES ('" + nome + "', '" + rg + "', '" + cpf + "'," +
+                                 "        '" + end + "', '" + num + "', '" + cep + "');";
 
                 MySqlCommand comando = new(x, conexao);
 
                 conexao.Open();
 
                 comando.ExecuteReader();
+
 
                 MessageBox.Show("Dados Inseridos com Sucesso!!!");
 

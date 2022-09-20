@@ -32,49 +32,13 @@ namespace MultiColoredModernUI
 
         //Methods
 
-        /*private void ActivateButton(object btnSender)
-        {
-            if (btnSender != null)
-            {
-                if (currentButton != (Button)btnSender)
-                {
-                    DisableButton();
-                    Color color = SelectThemeColor();
-                    currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
-                    currentButton.Font= new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-                    panelTitleBar.BackColor = ThemeColor.ChangeColorBrightness(color, -0.5);
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                    ThemeColor.PrimaryColor = color;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, 0.3);
-                    btnCloseChildForm.Visible = true;
-
-                }
-            }
-        }
-
-        /*private void DisableButton()
-        {
-            foreach (Control previousBtn in panelMenu.Controls)
-            {
-                if (previousBtn.GetType() == typeof(Button))
-                {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-
-                }
-            }
-        }*/
-
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activateForm != null)
             {
                 activateForm.Close();
             }
-            /*activateButton(btnSender);*/
+            //activateButton(btnSender);
             activateForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -127,7 +91,6 @@ namespace MultiColoredModernUI
 
         private void Reset()
         {
-            /*DisableButton();*/
             lblTitle.Text = "Menu Principal";
             lblTitle.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);

@@ -23,13 +23,14 @@ namespace MultiColoredModernUI.Forms
                 txtDescricao.Text == "" &&
                 txtCidade.Text == "" &&
                 txtBairro.Text == "" &&
-                txtRua.Text == "")
+                txtRua.Text == "" &&
+                txtfk_carro_placa.Text == "")
             {
                 MessageBox.Show("Insira os dados Corretamente");
             }
             else
             {
-                string q = "INSERT INTO ocorrencia (codOcorrencia, descricao, cidade, bairro, rua, fk_carro_placa) VALUES ('" + txtcdOcorrencia.Text + "', '" + txtDescricao.Text + "', '" + txtCidade.Text + "', '" + txtBairro.Text + "', '" + txtRua.Text + "', '" +txtfk_carro_placa+ "')";
+                string q = "INSERT INTO ocorrencia (codOcorrencia, descricao, cidade, bairro, rua, fk_carro_placa) VALUES ('" + txtcdOcorrencia.Text + "', '" + txtDescricao.Text + "', '" + txtCidade.Text + "', '" + txtBairro.Text + "', '" + txtRua.Text + "', '" +txtfk_carro_placa.Text+ "')";
 
                 MySqlCommand comando = new(q, conexao);
 

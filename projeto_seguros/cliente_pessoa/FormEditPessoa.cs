@@ -9,6 +9,8 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class FormEditPessoa : Form
     {
+        // gerando conexão com o banco de dados
+
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
@@ -17,14 +19,19 @@ namespace MultiColoredModernUI.Forms
             InitializeComponent();
         }
 
+        // alteração de dados de cliente cadastrados
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             MySqlConnection conexao = new(fonte);
 
-            if (txtNome.Text == "" &&
-                txtEndereco.Text == "" &&
-                txtNumero.Text == "" &&
-                txtCep.Text == "")
+            string nome = txtNome.Text;
+            string end = txtEndereco.Text;
+            string num = txtNumero.Text;
+            string cep = txtCep.Text;
+            string nomeA = txtNomeAlvo.Text;
+
+            if (nome == "" || end == "" || num == "" || cep == "" || nomeA == "")
             {
                 MessageBox.Show("Insira os dados Corretamente");
             }
@@ -32,12 +39,12 @@ namespace MultiColoredModernUI.Forms
             {
                 string x = "UPDATE pessoa " +
                            "SET " +
-                           "    nome = '" + txtNome.Text + "'," +
-                           "    endereco = '" + txtEndereco.Text + "'," +
-                           "    numero = '" + txtNumero.Text + "', " +
-                           "    cep = '" + txtCep.Text + "'" +
+                           "    nome = '" + nome + "'," +
+                           "    endereco = '" + end + "'," +
+                           "    numero = '" + num + "', " +
+                           "    cep = '" + cep + "'" +
                            "WHERE " +
-                           "    nome = '" + txtNomeAlvo.Text + "';";
+                           "    nome = '" + nomeA + "';";
 
                 MySqlCommand comando = new(x, conexao);
 

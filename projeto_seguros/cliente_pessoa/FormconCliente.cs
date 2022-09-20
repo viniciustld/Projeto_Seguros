@@ -7,6 +7,8 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class FormconCliente : Form
     {
+        // gerando conexão com o banco de dados
+
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
@@ -15,11 +17,14 @@ namespace MultiColoredModernUI.Forms
             InitializeComponent();
         }
 
+        // verificação do campo chave e pesquisa de cliente no banco de dados em tempo real
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
         {
             MySqlConnection conexao = new(fonte);
 
-            if (txtBuscar.Text != "")
+            string busca = txtBuscar.Text;
+
+            if (busca != "")
             {
                 data003.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
 
@@ -27,7 +32,7 @@ namespace MultiColoredModernUI.Forms
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT * FROM pessoa WHERE nome LIKE '%" + txtBuscar.Text + "%';";
+                string x = "SELECT * FROM pessoa WHERE nome LIKE '%" + busca + "%';";
 
                 conexao.Open();
                 cmd = new MySqlDataAdapter(x, conexao);
@@ -36,17 +41,20 @@ namespace MultiColoredModernUI.Forms
                 data003.DataSource = dv;
                 conexao.Close();
             }
-            else if (txtBuscar.Text == "")
+            else if (busca == "")
             {
                 data003.Refresh();
             }
         }
 
+        // janela de edição de cliente já cadastrados
         private void btnEdit_Click(object sender, System.EventArgs e)
         {
             FormEditPessoa ep = new FormEditPessoa();
             ep.Show();
         }
+
+        // evento de exclusão de clientes e carro (caso o cliente tenha veiculos) do banco de dados
 
         private void data003_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

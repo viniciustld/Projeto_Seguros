@@ -49,5 +49,9 @@ namespace MultiColoredModernUI.Forms
             AcionarSeguro acionar = new AcionarSeguro();
             acionar.Show();
         }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
