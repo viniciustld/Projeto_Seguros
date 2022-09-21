@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiColoredModernUI", "MultiColoredModernUI.csproj", "{61F4FD62-5161-49EF-912D-298DE676081E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto Seguros", "Projeto Seguros.csproj", "{61F4FD62-5161-49EF-912D-298DE676081E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

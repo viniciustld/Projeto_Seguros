@@ -27,7 +27,6 @@ C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\MultiColoredModernUI.runtimeconfig.dev.json
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\MultiColoredModernUI.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\MultiColoredModernUI.pdb
-C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.csproj.AssemblyReference.cache
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormaciSeguro.resources
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormcadCarro.resources
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormcadCliente.resources

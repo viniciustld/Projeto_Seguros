@@ -31,38 +31,38 @@ namespace MultiColoredModernUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlataformaSeguros));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.aciSeguro = new System.Windows.Forms.Button();
-            this.conCarro = new System.Windows.Forms.Button();
-            this.cadCarro = new System.Windows.Forms.Button();
-            this.conCliente = new System.Windows.Forms.Button();
-            this.cadCliente = new System.Windows.Forms.Button();
+            this.BtnSetting = new System.Windows.Forms.Button();
+            this.AciSeguro = new System.Windows.Forms.Button();
+            this.ConCarro = new System.Windows.Forms.Button();
+            this.CadCarro = new System.Windows.Forms.Button();
+            this.ConCliente = new System.Windows.Forms.Button();
+            this.CadCliente = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnMinimized = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnCloseChildForm = new System.Windows.Forms.Button();
+            this.PanelTitleBar = new System.Windows.Forms.Panel();
+            this.BtnMinimized = new System.Windows.Forms.Button();
+            this.BtnMaximize = new System.Windows.Forms.Button();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.PanelDesktopPane = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
-            this.panelDesktopPane.SuspendLayout();
+            this.PanelTitleBar.SuspendLayout();
+            this.PanelDesktopPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnSetting);
-            this.panelMenu.Controls.Add(this.aciSeguro);
-            this.panelMenu.Controls.Add(this.conCarro);
-            this.panelMenu.Controls.Add(this.cadCarro);
-            this.panelMenu.Controls.Add(this.conCliente);
-            this.panelMenu.Controls.Add(this.cadCliente);
+            this.panelMenu.Controls.Add(this.BtnSetting);
+            this.panelMenu.Controls.Add(this.AciSeguro);
+            this.panelMenu.Controls.Add(this.ConCarro);
+            this.panelMenu.Controls.Add(this.CadCarro);
+            this.panelMenu.Controls.Add(this.ConCliente);
+            this.panelMenu.Controls.Add(this.CadCliente);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -70,120 +70,120 @@ namespace MultiColoredModernUI
             this.panelMenu.Size = new System.Drawing.Size(220, 502);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnSetting
+            // BtnSetting
             // 
-            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 380);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(220, 60);
-            this.btnSetting.TabIndex = 6;
-            this.btnSetting.Text = "  Configurações";
-            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.btnConfig_Click);
+            this.BtnSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSetting.FlatAppearance.BorderSize = 0;
+            this.BtnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSetting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnSetting.Image = ((System.Drawing.Image)(resources.GetObject("BtnSetting.Image")));
+            this.BtnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSetting.Location = new System.Drawing.Point(0, 380);
+            this.BtnSetting.Name = "BtnSetting";
+            this.BtnSetting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnSetting.Size = new System.Drawing.Size(220, 60);
+            this.BtnSetting.TabIndex = 6;
+            this.BtnSetting.Text = "  Configurações";
+            this.BtnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSetting.UseVisualStyleBackColor = true;
+            this.BtnSetting.Click += new System.EventHandler(this.BtnConfig_Click);
             // 
-            // aciSeguro
+            // AciSeguro
             // 
-            this.aciSeguro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.aciSeguro.FlatAppearance.BorderSize = 0;
-            this.aciSeguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aciSeguro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.aciSeguro.Image = ((System.Drawing.Image)(resources.GetObject("aciSeguro.Image")));
-            this.aciSeguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aciSeguro.Location = new System.Drawing.Point(0, 320);
-            this.aciSeguro.Name = "aciSeguro";
-            this.aciSeguro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.aciSeguro.Size = new System.Drawing.Size(220, 60);
-            this.aciSeguro.TabIndex = 5;
-            this.aciSeguro.Text = "  Acionar Seguro";
-            this.aciSeguro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aciSeguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.aciSeguro.UseVisualStyleBackColor = true;
-            this.aciSeguro.Click += new System.EventHandler(this.aciSeguro_Click);
+            this.AciSeguro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AciSeguro.FlatAppearance.BorderSize = 0;
+            this.AciSeguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AciSeguro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.AciSeguro.Image = ((System.Drawing.Image)(resources.GetObject("AciSeguro.Image")));
+            this.AciSeguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AciSeguro.Location = new System.Drawing.Point(0, 320);
+            this.AciSeguro.Name = "AciSeguro";
+            this.AciSeguro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.AciSeguro.Size = new System.Drawing.Size(220, 60);
+            this.AciSeguro.TabIndex = 5;
+            this.AciSeguro.Text = "  Acionar Seguro";
+            this.AciSeguro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AciSeguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AciSeguro.UseVisualStyleBackColor = true;
+            this.AciSeguro.Click += new System.EventHandler(this.AciSeguro_Click);
             // 
-            // conCarro
+            // ConCarro
             // 
-            this.conCarro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.conCarro.FlatAppearance.BorderSize = 0;
-            this.conCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.conCarro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.conCarro.Image = ((System.Drawing.Image)(resources.GetObject("conCarro.Image")));
-            this.conCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.conCarro.Location = new System.Drawing.Point(0, 260);
-            this.conCarro.Name = "conCarro";
-            this.conCarro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.conCarro.Size = new System.Drawing.Size(220, 60);
-            this.conCarro.TabIndex = 4;
-            this.conCarro.Text = "  Consultar Carro";
-            this.conCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.conCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.conCarro.UseVisualStyleBackColor = true;
-            this.conCarro.Click += new System.EventHandler(this.conCarro_Click);
+            this.ConCarro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ConCarro.FlatAppearance.BorderSize = 0;
+            this.ConCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConCarro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ConCarro.Image = ((System.Drawing.Image)(resources.GetObject("ConCarro.Image")));
+            this.ConCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConCarro.Location = new System.Drawing.Point(0, 260);
+            this.ConCarro.Name = "ConCarro";
+            this.ConCarro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.ConCarro.Size = new System.Drawing.Size(220, 60);
+            this.ConCarro.TabIndex = 4;
+            this.ConCarro.Text = "  Consultar Carro";
+            this.ConCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ConCarro.UseVisualStyleBackColor = true;
+            this.ConCarro.Click += new System.EventHandler(this.ConCarro_Click);
             // 
-            // cadCarro
+            // CadCarro
             // 
-            this.cadCarro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cadCarro.FlatAppearance.BorderSize = 0;
-            this.cadCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cadCarro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cadCarro.Image = ((System.Drawing.Image)(resources.GetObject("cadCarro.Image")));
-            this.cadCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cadCarro.Location = new System.Drawing.Point(0, 200);
-            this.cadCarro.Name = "cadCarro";
-            this.cadCarro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.cadCarro.Size = new System.Drawing.Size(220, 60);
-            this.cadCarro.TabIndex = 3;
-            this.cadCarro.Text = "  Cadastrar Carro";
-            this.cadCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cadCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.cadCarro.UseVisualStyleBackColor = true;
-            this.cadCarro.Click += new System.EventHandler(this.cadCarro_Click);
+            this.CadCarro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CadCarro.FlatAppearance.BorderSize = 0;
+            this.CadCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CadCarro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.CadCarro.Image = ((System.Drawing.Image)(resources.GetObject("CadCarro.Image")));
+            this.CadCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CadCarro.Location = new System.Drawing.Point(0, 200);
+            this.CadCarro.Name = "CadCarro";
+            this.CadCarro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.CadCarro.Size = new System.Drawing.Size(220, 60);
+            this.CadCarro.TabIndex = 3;
+            this.CadCarro.Text = "  Cadastrar Carro";
+            this.CadCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CadCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CadCarro.UseVisualStyleBackColor = true;
+            this.CadCarro.Click += new System.EventHandler(this.CadCarro_Click);
             // 
-            // conCliente
+            // ConCliente
             // 
-            this.conCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.conCliente.FlatAppearance.BorderSize = 0;
-            this.conCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.conCliente.ForeColor = System.Drawing.Color.Gainsboro;
-            this.conCliente.Image = ((System.Drawing.Image)(resources.GetObject("conCliente.Image")));
-            this.conCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.conCliente.Location = new System.Drawing.Point(0, 140);
-            this.conCliente.Name = "conCliente";
-            this.conCliente.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.conCliente.Size = new System.Drawing.Size(220, 60);
-            this.conCliente.TabIndex = 2;
-            this.conCliente.Text = "  Consultar Cliente";
-            this.conCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.conCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.conCliente.UseVisualStyleBackColor = true;
-            this.conCliente.Click += new System.EventHandler(this.conCliente_Click);
+            this.ConCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ConCliente.FlatAppearance.BorderSize = 0;
+            this.ConCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConCliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ConCliente.Image = ((System.Drawing.Image)(resources.GetObject("ConCliente.Image")));
+            this.ConCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConCliente.Location = new System.Drawing.Point(0, 140);
+            this.ConCliente.Name = "ConCliente";
+            this.ConCliente.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.ConCliente.Size = new System.Drawing.Size(220, 60);
+            this.ConCliente.TabIndex = 2;
+            this.ConCliente.Text = "  Consultar Cliente";
+            this.ConCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ConCliente.UseVisualStyleBackColor = true;
+            this.ConCliente.Click += new System.EventHandler(this.ConCliente_Click);
             // 
-            // cadCliente
+            // CadCliente
             // 
-            this.cadCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cadCliente.FlatAppearance.BorderSize = 0;
-            this.cadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cadCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cadCliente.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cadCliente.Image = ((System.Drawing.Image)(resources.GetObject("cadCliente.Image")));
-            this.cadCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cadCliente.Location = new System.Drawing.Point(0, 80);
-            this.cadCliente.Name = "cadCliente";
-            this.cadCliente.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.cadCliente.Size = new System.Drawing.Size(220, 60);
-            this.cadCliente.TabIndex = 1;
-            this.cadCliente.Text = "  Cadastrar Cliente";
-            this.cadCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cadCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.cadCliente.UseVisualStyleBackColor = true;
-            this.cadCliente.Click += new System.EventHandler(this.cadCliente_Cclick);
+            this.CadCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CadCliente.FlatAppearance.BorderSize = 0;
+            this.CadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CadCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CadCliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.CadCliente.Image = ((System.Drawing.Image)(resources.GetObject("CadCliente.Image")));
+            this.CadCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CadCliente.Location = new System.Drawing.Point(0, 80);
+            this.CadCliente.Name = "CadCliente";
+            this.CadCliente.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.CadCliente.Size = new System.Drawing.Size(220, 60);
+            this.CadCliente.TabIndex = 1;
+            this.CadCliente.Text = "  Cadastrar Cliente";
+            this.CadCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CadCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CadCliente.UseVisualStyleBackColor = true;
+            this.CadCliente.Click += new System.EventHandler(this.CadCliente_Cclick);
             // 
             // panelLogo
             // 
@@ -206,78 +206,80 @@ namespace MultiColoredModernUI
             this.label1.TabIndex = 0;
             this.label1.Text = "Top Serviços Brasil";
             // 
-            // panelTitleBar
+            // PanelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(136)))));
-            this.panelTitleBar.Controls.Add(this.btnMinimized);
-            this.panelTitleBar.Controls.Add(this.btnMaximize);
-            this.panelTitleBar.Controls.Add(this.btnClose);
-            this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(628, 80);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            this.PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(136)))));
+            this.PanelTitleBar.Controls.Add(this.BtnMinimized);
+            this.PanelTitleBar.Controls.Add(this.BtnMaximize);
+            this.PanelTitleBar.Controls.Add(this.BtnClose);
+            this.PanelTitleBar.Controls.Add(this.BtnCloseChildForm);
+            this.PanelTitleBar.Controls.Add(this.lblTitle);
+            this.PanelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.PanelTitleBar.Name = "PanelTitleBar";
+            this.PanelTitleBar.Size = new System.Drawing.Size(628, 80);
+            this.PanelTitleBar.TabIndex = 1;
+            this.PanelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitleBar_MouseDown);
             // 
-            // btnMinimized
+            // BtnMinimized
             // 
-            this.btnMinimized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimized.FlatAppearance.BorderSize = 0;
-            this.btnMinimized.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimized.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMinimized.ForeColor = System.Drawing.Color.White;
-            this.btnMinimized.Location = new System.Drawing.Point(546, 0);
-            this.btnMinimized.Name = "btnMinimized";
-            this.btnMinimized.Size = new System.Drawing.Size(30, 40);
-            this.btnMinimized.TabIndex = 4;
-            this.btnMinimized.Text = "-";
-            this.btnMinimized.UseVisualStyleBackColor = true;
-            this.btnMinimized.Click += new System.EventHandler(this.btnMinimized_Click);
+            this.BtnMinimized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimized.FlatAppearance.BorderSize = 0;
+            this.BtnMinimized.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinimized.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnMinimized.ForeColor = System.Drawing.Color.White;
+            this.BtnMinimized.Location = new System.Drawing.Point(546, 0);
+            this.BtnMinimized.Name = "BtnMinimized";
+            this.BtnMinimized.Size = new System.Drawing.Size(30, 40);
+            this.BtnMinimized.TabIndex = 4;
+            this.BtnMinimized.Text = "-";
+            this.BtnMinimized.UseVisualStyleBackColor = true;
+            this.BtnMinimized.Click += new System.EventHandler(this.BtnMinimized_Click);
             // 
-            // btnMaximize
+            // BtnMaximize
             // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Location = new System.Drawing.Point(573, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 40);
-            this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.Text = "º";
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            this.BtnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMaximize.FlatAppearance.BorderSize = 0;
+            this.BtnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaximize.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnMaximize.ForeColor = System.Drawing.Color.White;
+            this.BtnMaximize.Location = new System.Drawing.Point(573, 0);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(30, 40);
+            this.BtnMaximize.TabIndex = 3;
+            this.BtnMaximize.Text = "º";
+            this.BtnMaximize.UseVisualStyleBackColor = true;
+            this.BtnMaximize.Click += new System.EventHandler(this.BtnMaximize_Click);
             // 
-            // btnClose
+            // BtnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(600, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 40);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnClose.ForeColor = System.Drawing.Color.White;
+            this.BtnClose.Location = new System.Drawing.Point(600, 0);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(30, 40);
+            this.BtnClose.TabIndex = 2;
+            this.BtnClose.Text = "X";
+            this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // btnCloseChildForm
+            // BtnCloseChildForm
             // 
-            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
-            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChildForm.Image = global::MultiColoredModernUI.Properties.Resources.cross_out__2_;
-            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
-            this.btnCloseChildForm.Name = "btnCloseChildForm";
-            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
-            this.btnCloseChildForm.TabIndex = 1;
-            this.btnCloseChildForm.UseVisualStyleBackColor = true;
-            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
+            this.BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(136)))));
+            this.BtnCloseChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.BtnCloseChildForm.FlatAppearance.BorderSize = 0;
+            this.BtnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCloseChildForm.Image = global::Projeto_Seguros.Properties.Resources.cross_out__2_;
+            this.BtnCloseChildForm.Location = new System.Drawing.Point(0, 0);
+            this.BtnCloseChildForm.Name = "BtnCloseChildForm";
+            this.BtnCloseChildForm.Size = new System.Drawing.Size(75, 80);
+            this.BtnCloseChildForm.TabIndex = 1;
+            this.BtnCloseChildForm.UseVisualStyleBackColor = false;
+            this.BtnCloseChildForm.Click += new System.EventHandler(this.BtnCloseChildForm_Click);
             // 
             // lblTitle
             // 
@@ -291,22 +293,22 @@ namespace MultiColoredModernUI
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Menu Principal";
             // 
-            // panelDesktopPane
+            // PanelDesktopPane
             // 
-            this.panelDesktopPane.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelDesktopPane.Controls.Add(this.pictureBox1);
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(220, 80);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(628, 422);
-            this.panelDesktopPane.TabIndex = 2;
-            this.panelDesktopPane.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktopPane_Paint);
+            this.PanelDesktopPane.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelDesktopPane.Controls.Add(this.pictureBox1);
+            this.PanelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelDesktopPane.Location = new System.Drawing.Point(220, 80);
+            this.PanelDesktopPane.Name = "PanelDesktopPane";
+            this.PanelDesktopPane.Size = new System.Drawing.Size(628, 422);
+            this.PanelDesktopPane.TabIndex = 2;
+            this.PanelDesktopPane.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDesktopPane_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::MultiColoredModernUI.Properties.Resources.UINP;
+            this.pictureBox1.Image = global::Projeto_Seguros.Properties.Resources.UINP;
             this.pictureBox1.Location = new System.Drawing.Point(180, 135);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
@@ -320,18 +322,18 @@ namespace MultiColoredModernUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 502);
-            this.Controls.Add(this.panelDesktopPane);
-            this.Controls.Add(this.panelTitleBar);
+            this.Controls.Add(this.PanelDesktopPane);
+            this.Controls.Add(this.PanelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "PlataformaSeguros";
             this.Text = "PlataformaSeguros";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
-            this.panelDesktopPane.ResumeLayout(false);
-            this.panelDesktopPane.PerformLayout();
+            this.PanelTitleBar.ResumeLayout(false);
+            this.PanelTitleBar.PerformLayout();
+            this.PanelDesktopPane.ResumeLayout(false);
+            this.PanelDesktopPane.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -340,22 +342,22 @@ namespace MultiColoredModernUI
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button btnSetting;
-        private System.Windows.Forms.Button aciSeguro;
-        private System.Windows.Forms.Button conCarro;
-        private System.Windows.Forms.Button cadCarro;
-        private System.Windows.Forms.Button conCliente;
-        private System.Windows.Forms.Button cadCliente;
+        private System.Windows.Forms.Button BtnSetting;
+        private System.Windows.Forms.Button AciSeguro;
+        private System.Windows.Forms.Button ConCarro;
+        private System.Windows.Forms.Button CadCarro;
+        private System.Windows.Forms.Button ConCliente;
+        private System.Windows.Forms.Button CadCliente;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Panel PanelTitleBar;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panelDesktopPane;
-        private System.Windows.Forms.Button btnCloseChildForm;
+        private System.Windows.Forms.Panel PanelDesktopPane;
+        private System.Windows.Forms.Button BtnCloseChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnMinimized;
-        private System.Windows.Forms.Button btnMaximize;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button BtnMinimized;
+        private System.Windows.Forms.Button BtnMaximize;
+        private System.Windows.Forms.Button BtnClose;
     }
 }
 

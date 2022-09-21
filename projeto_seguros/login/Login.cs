@@ -8,6 +8,7 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class Login : Form
     {
+        // gerando conexão com o banco de dados
         private MySqlConnection conexao;
 
         private string fonte = "server=127.0.0.1;user id=root;password='123vin@';persistsecurityinfo=True;database=pim";
@@ -16,12 +17,15 @@ namespace MultiColoredModernUI.Forms
             InitializeComponent();
         }
 
+        // evento de verificação de usuário e login no sistema
         private void Logar_Click(object sender, EventArgs e)
         {
             MySqlConnection conexao = new(fonte);
 
-            if (txtUser.Text == "" &&
-                txtPass.Text == "")
+            string user = txtUser.Text;
+            string pass = txtPass.Text;
+
+            if (user == "" || pass == "")
             {
                 MessageBox.Show("Insira os dados Corretamente");
             }
@@ -32,10 +36,11 @@ namespace MultiColoredModernUI.Forms
                 MySqlCommand cmd = new MySqlCommand();
                 conexao.Open();
                 cmd.Connection = conexao;
-                cmd.CommandText = "SELECT * FROM funcionario where nome = '" + txtUser.Text + "' AND senha = '" + txtPass.Text + "';";
+                cmd.CommandText = "SELECT * FROM funcionario where nome = '" + user + "' AND senha = '" + pass + "';";
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+                    // mensagem de login com sucesso
                     DialogResult m = MessageBox.Show("Logado Com Sucesso!!!", "", MessageBoxButtons.OK);
                     if (m == DialogResult.OK)
                     {
@@ -58,6 +63,8 @@ namespace MultiColoredModernUI.Forms
             }
 
         }
+
+        // botão para gerar janela de criação de novo login
 
         private void btnCreate_Click(object sender, EventArgs e)
         {

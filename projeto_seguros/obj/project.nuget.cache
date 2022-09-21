@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RzbLRNlhhAHtdlwhTY9VWt3jyU+6+xRPr0r8mJzXNi4FJKvLl41/cluYw+vtaHyh6dZxjv8jHxOzCZs4ygUuTA==",
+  "dgSpecHash": "CUobepV88cjcJXjZaA5pGWFQRH5cNPERWeyybuL7TpLc1BpY9w0y2aBpuKG0p8RM1z2PsqYAGWbeL6eRZEsQwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
+  "projectFilePath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinic\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

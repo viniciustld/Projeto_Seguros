@@ -1127,9 +1127,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
-      "projectName": "MultiColoredModernUI",
-      "projectPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\MultiColoredModernUI.csproj",
+      "projectUniqueName": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
+      "projectName": "Projeto Seguros",
+      "projectPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
       "packagesPath": "C:\\Users\\Vinic\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\obj\\",
       "projectStyle": "PackageReference",

@@ -2,3 +2,9 @@
 
 # CS0169: O campo "PlataformaSeguros.tempIndex" nunca é usado
 dotnet_diagnostic.CS0169.severity = none
+
+# Default severity for analyzer diagnostics with category 'CodeQuality'
+dotnet_analyzer_diagnostic.category-CodeQuality.severity = none
+
+# CS0414: O campo "PlataformaSeguros.currentButton" é atribuído, mas seu valor nunca é usado
+dotnet_diagnostic.CS0414.severity = silent

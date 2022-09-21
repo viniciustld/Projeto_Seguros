@@ -1,0 +1,44 @@
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormcadCarro.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormconCarro.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormEditCarro.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormcadCliente.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormconCliente.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormEditPessoa.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.AcionarSeguro.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormaciSeguro.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.FormConfiguracoes.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.PlataformaSeguros.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.login.CriarLogin.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\MultiColoredModernUI.Forms.Login.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto_Seguros.Properties.Resources.resources
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.GenerateResource.cache
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.AssemblyInfoInputs.cache
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.AssemblyInfo.cs
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.CoreCompileInputs.cache
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.exe
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.deps.json
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.runtimeconfig.json
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.runtimeconfig.dev.json
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\ref\Projeto Seguros.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.pdb
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\ZstdNet.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.CopyComplete
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\ref\Projeto Seguros.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.pdb
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.genruntimeconfig.cache

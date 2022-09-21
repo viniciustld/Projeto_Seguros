@@ -33,7 +33,6 @@ namespace MultiColoredModernUI.Forms
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAcionar = new System.Windows.Forms.Button();
-            this.btnPdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data003)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,23 +78,12 @@ namespace MultiColoredModernUI.Forms
             this.btnAcionar.UseVisualStyleBackColor = true;
             this.btnAcionar.Click += new System.EventHandler(this.btnAcionar_Click);
             // 
-            // btnPdf
-            // 
-            this.btnPdf.Location = new System.Drawing.Point(120, 250);
-            this.btnPdf.Name = "btnPdf";
-            this.btnPdf.Size = new System.Drawing.Size(75, 23);
-            this.btnPdf.TabIndex = 6;
-            this.btnPdf.Text = "Gerar PDF";
-            this.btnPdf.UseVisualStyleBackColor = true;
-            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
-            // 
             // FormaciSeguro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 441);
-            this.Controls.Add(this.btnPdf);
             this.Controls.Add(this.btnAcionar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscar);
@@ -114,6 +102,5 @@ namespace MultiColoredModernUI.Forms
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAcionar;
-        private System.Windows.Forms.Button btnPdf;
     }
 }
