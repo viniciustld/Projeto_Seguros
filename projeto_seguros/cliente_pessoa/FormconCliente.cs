@@ -1,7 +1,7 @@
-﻿using System.Data;
+﻿using MySql.Data.MySqlClient;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace MultiColoredModernUI.Forms
 {
@@ -15,6 +15,14 @@ namespace MultiColoredModernUI.Forms
         public FormconCliente()
         {
             InitializeComponent();
+            cor();
+        }
+        private void cor()
+        {
+            if (BackColor == Color.FromArgb(65, 65, 65))
+            {
+                data003.BackgroundColor = Color.FromArgb(65, 65, 65);
+            }
         }
 
         // verificação do campo chave e pesquisa de cliente no banco de dados em tempo real
@@ -72,14 +80,14 @@ namespace MultiColoredModernUI.Forms
 
                 string info1 = data003.Rows[e.RowIndex].Cells[2].Value.ToString();
 
-                string y = "DELETE FROM carro WHERE fk_pessoa_cpf = '"+info1+"'";
+                string y = "DELETE FROM carro WHERE fk_pessoa_cpf = '" + info1 + "'";
 
                 MySqlCommand comando1 = new(y, conexao);
 
                 conexao.Open();
 
                 comando1.ExecuteReader();
-                
+
 
                 conexao.Close();
 
@@ -100,7 +108,7 @@ namespace MultiColoredModernUI.Forms
                 conexao.Close();
             }
 
-            
+
         }
     }
 }

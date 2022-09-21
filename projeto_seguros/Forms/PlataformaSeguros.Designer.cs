@@ -31,7 +31,6 @@ namespace MultiColoredModernUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlataformaSeguros));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.BtnSetting = new System.Windows.Forms.Button();
             this.AciSeguro = new System.Windows.Forms.Button();
             this.ConCarro = new System.Windows.Forms.Button();
             this.CadCarro = new System.Windows.Forms.Button();
@@ -46,18 +45,17 @@ namespace MultiColoredModernUI
             this.BtnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.PanelDesktopPane = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnLight = new System.Windows.Forms.Button();
+            this.BtnDark = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.PanelTitleBar.SuspendLayout();
             this.PanelDesktopPane.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.BtnSetting);
             this.panelMenu.Controls.Add(this.AciSeguro);
             this.panelMenu.Controls.Add(this.ConCarro);
             this.panelMenu.Controls.Add(this.CadCarro);
@@ -69,25 +67,6 @@ namespace MultiColoredModernUI
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 502);
             this.panelMenu.TabIndex = 0;
-            // 
-            // BtnSetting
-            // 
-            this.BtnSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnSetting.FlatAppearance.BorderSize = 0;
-            this.BtnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSetting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnSetting.Image = ((System.Drawing.Image)(resources.GetObject("BtnSetting.Image")));
-            this.BtnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSetting.Location = new System.Drawing.Point(0, 380);
-            this.BtnSetting.Name = "BtnSetting";
-            this.BtnSetting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.BtnSetting.Size = new System.Drawing.Size(220, 60);
-            this.BtnSetting.TabIndex = 6;
-            this.BtnSetting.Text = "  Configurações";
-            this.BtnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnSetting.UseVisualStyleBackColor = true;
-            this.BtnSetting.Click += new System.EventHandler(this.BtnConfig_Click);
             // 
             // AciSeguro
             // 
@@ -296,35 +275,52 @@ namespace MultiColoredModernUI
             // PanelDesktopPane
             // 
             this.PanelDesktopPane.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PanelDesktopPane.Controls.Add(this.pictureBox1);
+            this.PanelDesktopPane.Controls.Add(this.BtnLight);
+            this.PanelDesktopPane.Controls.Add(this.BtnDark);
             this.PanelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelDesktopPane.Location = new System.Drawing.Point(220, 80);
             this.PanelDesktopPane.Name = "PanelDesktopPane";
             this.PanelDesktopPane.Size = new System.Drawing.Size(628, 422);
             this.PanelDesktopPane.TabIndex = 2;
-            this.PanelDesktopPane.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDesktopPane_Paint);
             // 
-            // pictureBox1
+            // BtnLight
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::Projeto_Seguros.Properties.Resources.UINP;
-            this.pictureBox1.Location = new System.Drawing.Point(180, 135);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(246, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.BtnLight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnLight.FlatAppearance.BorderSize = 0;
+            this.BtnLight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLight.Location = new System.Drawing.Point(530, 40);
+            this.BtnLight.Name = "BtnLight";
+            this.BtnLight.Size = new System.Drawing.Size(90, 23);
+            this.BtnLight.TabIndex = 1;
+            this.BtnLight.Text = "Light Mode";
+            this.BtnLight.UseVisualStyleBackColor = true;
+            this.BtnLight.Click += new System.EventHandler(this.BtnLight_Click);
+            // 
+            // BtnDark
+            // 
+            this.BtnDark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnDark.FlatAppearance.BorderSize = 0;
+            this.BtnDark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDark.Location = new System.Drawing.Point(530, 5);
+            this.BtnDark.Name = "BtnDark";
+            this.BtnDark.Size = new System.Drawing.Size(90, 23);
+            this.BtnDark.TabIndex = 0;
+            this.BtnDark.Text = "Dark Mode";
+            this.BtnDark.UseVisualStyleBackColor = true;
+            this.BtnDark.Click += new System.EventHandler(this.BtnDark_Click);
             // 
             // PlataformaSeguros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(848, 502);
             this.Controls.Add(this.PanelDesktopPane);
             this.Controls.Add(this.PanelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PlataformaSeguros";
             this.Text = "PlataformaSeguros";
             this.panelMenu.ResumeLayout(false);
@@ -333,8 +329,6 @@ namespace MultiColoredModernUI
             this.PanelTitleBar.ResumeLayout(false);
             this.PanelTitleBar.PerformLayout();
             this.PanelDesktopPane.ResumeLayout(false);
-            this.PanelDesktopPane.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,7 +336,6 @@ namespace MultiColoredModernUI
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button BtnSetting;
         private System.Windows.Forms.Button AciSeguro;
         private System.Windows.Forms.Button ConCarro;
         private System.Windows.Forms.Button CadCarro;
@@ -354,10 +347,11 @@ namespace MultiColoredModernUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelDesktopPane;
         private System.Windows.Forms.Button BtnCloseChildForm;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnMinimized;
         private System.Windows.Forms.Button BtnMaximize;
         private System.Windows.Forms.Button BtnClose;
+        private System.Windows.Forms.Button BtnLight;
+        private System.Windows.Forms.Button BtnDark;
     }
 }
 

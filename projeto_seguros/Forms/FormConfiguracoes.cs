@@ -19,7 +19,6 @@ namespace MultiColoredModernUI.Forms
 
         private void FormConfiguracoes_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

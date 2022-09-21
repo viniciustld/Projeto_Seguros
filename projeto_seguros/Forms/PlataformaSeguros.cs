@@ -13,6 +13,7 @@ namespace MultiColoredModernUI
         private readonly Random random;
         private readonly int tempIndex;
         private Form activateForm;
+        public bool dark;
 
         //Contructor
         public PlataformaSeguros()
@@ -49,6 +50,10 @@ namespace MultiColoredModernUI
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+            if (dark)
+            {
+                childForm.BackColor = System.Drawing.Color.FromArgb(0, 75, 102);
+            }
 
         }
 
@@ -83,12 +88,6 @@ namespace MultiColoredModernUI
             BtnCloseChildForm.Show();
         }
 
-        private void BtnConfig_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormConfiguracoes(), sender);
-            BtnCloseChildForm.Show();
-        }
-
         // botão que encerra a janela aberta e retorna ao menu principal
         private void BtnCloseChildForm_Click(object sender, EventArgs e)
         {
@@ -104,8 +103,6 @@ namespace MultiColoredModernUI
         {
             lblTitle.Text = "Menu Principal";
             lblTitle.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            PanelTitleBar.BackColor = Color.FromArgb(0, 110, 136);
-            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
             BtnCloseChildForm.Visible = false;
 
@@ -136,9 +133,28 @@ namespace MultiColoredModernUI
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void PanelDesktopPane_Paint(object sender, PaintEventArgs e)
+        public void BtnDark_Click(object sender, EventArgs e)
         {
+            PanelDesktopPane.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(75, 75, 75);
+            panelLogo.BackColor = System.Drawing.Color.FromArgb(80,80,80);
+            panelMenu.BackColor = System.Drawing.Color.FromArgb(75,75,75);
+            BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(75, 75, 75);
+            BtnDark.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            BtnLight.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            dark = true;
+        }
 
+        public void BtnLight_Click(object sender, EventArgs e)
+        {
+            PanelDesktopPane.BackColor = System.Drawing.Color.FromArgb(153, 180, 209);
+            PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(0, 110, 136);
+            panelLogo.BackColor = System.Drawing.Color.FromArgb(39, 39, 58);
+            panelMenu.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);
+            BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(0, 110, 136);
+            BtnDark.BackColor = DefaultBackColor;
+            BtnLight.BackColor = DefaultBackColor;
+            dark = false;
         }
     }
 }

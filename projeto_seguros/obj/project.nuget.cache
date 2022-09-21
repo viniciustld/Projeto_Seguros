@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CUobepV88cjcJXjZaA5pGWFQRH5cNPERWeyybuL7TpLc1BpY9w0y2aBpuKG0p8RM1z2PsqYAGWbeL6eRZEsQwQ==",
+  "dgSpecHash": "Gfm4ElP//cl9PeEEQ5ICnhVYIQDy/air8jJy9y570iOoarhUhkmakZw+EHKNI6npMUM3H4JKAvusCZ3BdFWhYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
+  "projectFilePath": "C:\\Users\\Vinic\\Desktop\\Projeto_Seguros-main\\projeto_seguros\\Projeto Seguros.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Vinic\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
@@ -21,6 +22,7 @@
     "C:\\Users\\Vinic\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Vinic\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",

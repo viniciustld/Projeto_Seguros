@@ -29,6 +29,7 @@ namespace MultiColoredModernUI.login
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriarLogin));
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -109,6 +110,7 @@ namespace MultiColoredModernUI.login
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CriarLogin";
             this.Text = "CriarLogin";
             this.ResumeLayout(false);

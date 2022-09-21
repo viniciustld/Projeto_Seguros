@@ -7,6 +7,7 @@ namespace MultiColoredModernUI.Forms
 {
     public partial class FormcadCliente : Form
     {
+
         // gerando conexao com o banco de dados
 
         private MySqlConnection conexao;
@@ -15,6 +16,16 @@ namespace MultiColoredModernUI.Forms
 
         public FormcadCliente()
         {
+            if (BackColor == System.Drawing.Color.FromArgb(65, 65, 65))
+            {
+                label1.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                label2.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                label3.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                label6.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                label7.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                label8.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                btnSalvar.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            }
             InitializeComponent();
         }
 
@@ -75,5 +86,6 @@ namespace MultiColoredModernUI.Forms
                 }
             }
         }
+
     }
 }
