@@ -21,7 +21,6 @@ C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.runtimeconfig.json
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.runtimeconfig.dev.json
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.dll
-C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\ref\Projeto Seguros.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Projeto Seguros.pdb
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\Google.Protobuf.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
@@ -90,3 +89,4 @@ C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\obj\Debug\net5.0-win
 C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.genruntimeconfig.cache
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\DocumentFormat.OpenXml.dll
 C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.AssemblyReference.cache
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\refint\Projeto Seguros.dll
