@@ -47,6 +47,7 @@ namespace MultiColoredModernUI
             this.PanelDesktopPane = new System.Windows.Forms.Panel();
             this.BtnLight = new System.Windows.Forms.Button();
             this.BtnDark = new System.Windows.Forms.Button();
+            this.BtnOut = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.PanelTitleBar.SuspendLayout();
@@ -275,6 +276,7 @@ namespace MultiColoredModernUI
             // PanelDesktopPane
             // 
             this.PanelDesktopPane.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelDesktopPane.Controls.Add(this.BtnOut);
             this.PanelDesktopPane.Controls.Add(this.BtnLight);
             this.PanelDesktopPane.Controls.Add(this.BtnDark);
             this.PanelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -308,6 +310,19 @@ namespace MultiColoredModernUI
             this.BtnDark.Text = "Dark Mode";
             this.BtnDark.UseVisualStyleBackColor = true;
             this.BtnDark.Click += new System.EventHandler(this.BtnDark_Click);
+            // 
+            // BtnOut
+            // 
+            this.BtnOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnOut.FlatAppearance.BorderSize = 0;
+            this.BtnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOut.Location = new System.Drawing.Point(530, 69);
+            this.BtnOut.Name = "BtnOut";
+            this.BtnOut.Size = new System.Drawing.Size(90, 23);
+            this.BtnOut.TabIndex = 2;
+            this.BtnOut.Text = "Logout";
+            this.BtnOut.UseVisualStyleBackColor = true;
+            this.BtnOut.Click += new System.EventHandler(this.BtnOut_Click);
             // 
             // PlataformaSeguros
             // 
@@ -352,6 +367,7 @@ namespace MultiColoredModernUI
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.Button BtnLight;
         private System.Windows.Forms.Button BtnDark;
+        private System.Windows.Forms.Button BtnOut;
     }
 }
 

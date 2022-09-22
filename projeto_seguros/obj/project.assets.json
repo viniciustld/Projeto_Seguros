@@ -1198,11 +1198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinic\\Desktop\\Projeto_Seguros-main\\projeto_seguros\\Projeto Seguros.csproj",
+      "projectUniqueName": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
       "projectName": "Projeto Seguros",
-      "projectPath": "C:\\Users\\Vinic\\Desktop\\Projeto_Seguros-main\\projeto_seguros\\Projeto Seguros.csproj",
+      "projectPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\Projeto Seguros.csproj",
       "packagesPath": "C:\\Users\\Vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinic\\Desktop\\Projeto_Seguros-main\\projeto_seguros\\obj\\",
+      "outputPath": "C:\\Users\\Vinic\\Documents\\GitHub\\Projeto_Seguros\\projeto_seguros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

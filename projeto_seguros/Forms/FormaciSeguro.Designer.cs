@@ -52,9 +52,9 @@ namespace MultiColoredModernUI.Forms
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(120, 5);
+            this.txtBuscar.Location = new System.Drawing.Point(150, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.PlaceholderText = "Cpf do Cliente";
+            this.txtBuscar.PlaceholderText = "Código da Ocorrência";
             this.txtBuscar.Size = new System.Drawing.Size(200, 23);
             this.txtBuscar.TabIndex = 1;
             this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
@@ -64,9 +64,9 @@ namespace MultiColoredModernUI.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 15);
+            this.label1.Size = new System.Drawing.Size(123, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Selecione o Carro";
+            this.label1.Text = "Pesquise a Ocorrência";
             // 
             // btnAcionar
             // 

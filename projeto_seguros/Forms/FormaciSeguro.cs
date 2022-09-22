@@ -35,7 +35,7 @@ namespace MultiColoredModernUI.Forms
                 DataSet ds = new DataSet();
                 DataView dv = new DataView();
 
-                string x = "SELECT pessoa.nome, pessoa.cpf, carro.cor, carro.placa, carro.modelo, carro.marca FROM pessoa RIGHT OUTER JOIN carro ON pessoa.cpf = carro.fk_pessoa_cpf WHERE cpf LIKE '%" + busca + "%';";
+                string x = "SELECT * FROM ocorrencia RIGHT OUTER JOIN carro ON ocorrencia.fk_carro_placa = carro.placa WHERE codOcorrencia LIKE '%" + busca + "%';";
 
 
                 conexao.Open();

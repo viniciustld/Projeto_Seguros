@@ -133,6 +133,7 @@ namespace MultiColoredModernUI
             this.WindowState = FormWindowState.Minimized;
         }
 
+        // botao modo noturno e modo claro e botao de logout
         public void BtnDark_Click(object sender, EventArgs e)
         {
             PanelDesktopPane.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
@@ -155,6 +156,12 @@ namespace MultiColoredModernUI
             BtnDark.BackColor = DefaultBackColor;
             BtnLight.BackColor = DefaultBackColor;
             dark = false;
+        }
+
+        private void BtnOut_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Retornando a tela de Login!");
+            Application.Restart();
         }
     }
 }

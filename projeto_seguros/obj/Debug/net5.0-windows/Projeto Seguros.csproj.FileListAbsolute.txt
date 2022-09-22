@@ -88,3 +88,5 @@ C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\bin\Debug\net5.0-win
 C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.CopyComplete
 C:\Users\Vinic\Desktop\Projeto_Seguros-main\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.genruntimeconfig.cache
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\bin\Debug\net5.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Vinic\Documents\GitHub\Projeto_Seguros\projeto_seguros\obj\Debug\net5.0-windows\Projeto Seguros.csproj.AssemblyReference.cache
