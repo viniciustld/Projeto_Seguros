@@ -45,9 +45,9 @@ namespace MultiColoredModernUI
             this.BtnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.PanelDesktopPane = new System.Windows.Forms.Panel();
+            this.BtnOut = new System.Windows.Forms.Button();
             this.BtnLight = new System.Windows.Forms.Button();
             this.BtnDark = new System.Windows.Forms.Button();
-            this.BtnOut = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.PanelTitleBar.SuspendLayout();
@@ -253,11 +253,13 @@ namespace MultiColoredModernUI
             this.BtnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
             this.BtnCloseChildForm.FlatAppearance.BorderSize = 0;
             this.BtnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCloseChildForm.Image = global::Projeto_Seguros.Properties.Resources.cross_out__2_;
+            this.BtnCloseChildForm.Image = global::Projeto_Seguros.Properties.Resources.botao_de_retorno;
             this.BtnCloseChildForm.Location = new System.Drawing.Point(0, 0);
             this.BtnCloseChildForm.Name = "BtnCloseChildForm";
             this.BtnCloseChildForm.Size = new System.Drawing.Size(75, 80);
             this.BtnCloseChildForm.TabIndex = 1;
+            this.BtnCloseChildForm.Text = "Retornar";
+            this.BtnCloseChildForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnCloseChildForm.UseVisualStyleBackColor = false;
             this.BtnCloseChildForm.Click += new System.EventHandler(this.BtnCloseChildForm_Click);
             // 
@@ -285,12 +287,25 @@ namespace MultiColoredModernUI
             this.PanelDesktopPane.Size = new System.Drawing.Size(628, 422);
             this.PanelDesktopPane.TabIndex = 2;
             // 
+            // BtnOut
+            // 
+            this.BtnOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnOut.FlatAppearance.BorderSize = 0;
+            this.BtnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOut.Location = new System.Drawing.Point(530, 55);
+            this.BtnOut.Name = "BtnOut";
+            this.BtnOut.Size = new System.Drawing.Size(90, 23);
+            this.BtnOut.TabIndex = 2;
+            this.BtnOut.Text = "Logout";
+            this.BtnOut.UseVisualStyleBackColor = true;
+            this.BtnOut.Click += new System.EventHandler(this.BtnOut_Click);
+            // 
             // BtnLight
             // 
             this.BtnLight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnLight.FlatAppearance.BorderSize = 0;
             this.BtnLight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLight.Location = new System.Drawing.Point(530, 40);
+            this.BtnLight.Location = new System.Drawing.Point(530, 30);
             this.BtnLight.Name = "BtnLight";
             this.BtnLight.Size = new System.Drawing.Size(90, 23);
             this.BtnLight.TabIndex = 1;
@@ -310,19 +325,6 @@ namespace MultiColoredModernUI
             this.BtnDark.Text = "Dark Mode";
             this.BtnDark.UseVisualStyleBackColor = true;
             this.BtnDark.Click += new System.EventHandler(this.BtnDark_Click);
-            // 
-            // BtnOut
-            // 
-            this.BtnOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnOut.FlatAppearance.BorderSize = 0;
-            this.BtnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnOut.Location = new System.Drawing.Point(530, 69);
-            this.BtnOut.Name = "BtnOut";
-            this.BtnOut.Size = new System.Drawing.Size(90, 23);
-            this.BtnOut.TabIndex = 2;
-            this.BtnOut.Text = "Logout";
-            this.BtnOut.UseVisualStyleBackColor = true;
-            this.BtnOut.Click += new System.EventHandler(this.BtnOut_Click);
             // 
             // PlataformaSeguros
             // 

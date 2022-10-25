@@ -140,7 +140,7 @@ namespace MultiColoredModernUI
             PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(75, 75, 75);
             panelLogo.BackColor = System.Drawing.Color.FromArgb(80,80,80);
             panelMenu.BackColor = System.Drawing.Color.FromArgb(75,75,75);
-            BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(75, 75, 75);
+            BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(153, 180, 209) ;
             BtnDark.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
             BtnLight.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
             dark = true;
@@ -153,8 +153,8 @@ namespace MultiColoredModernUI
             panelLogo.BackColor = System.Drawing.Color.FromArgb(39, 39, 58);
             panelMenu.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);
             BtnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(0, 110, 136);
-            BtnDark.BackColor = DefaultBackColor;
-            BtnLight.BackColor = DefaultBackColor;
+            BtnDark.BackColor = System.Drawing.Color.FromArgb(153, 180, 209);
+            BtnLight.BackColor = System.Drawing.Color.FromArgb(153, 180, 209);
             dark = false;
         }
 
